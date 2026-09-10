@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'primary-fixed': '#b2eee7', 'on-primary-fixed-variant': '#0c4f4a', 'on-secondary-fixed': '#00201a', 'primary-fixed-dim': '#96d2cb', 'primary-container': '#0b4f4a', 'on-primary-container': '#84bfb8', 'on-primary-fixed': '#00201d', 'on-surface-variant': '#3f4947', 'surface-container-high': '#eae7e7', 'on-secondary-fixed-variant': '#005144', 'background': '#fcf9f8', 'on-surface': '#1b1b1b', 'on-primary': '#ffffff', 'on-error': '#ffffff', 'surface-container-highest': '#e5e2e1', 'inverse-on-surface': '#f3f0ef', 'surface-container': '#f0eded', 'surface-bright': '#fcf9f8', 'surface-tint': '#2c6862', 'inverse-surface': '#313030', 'outline': '#707977', 'surface-dim': '#dcd9d9', 'inverse-primary': '#96d2cb', 'secondary-container': '#a2f2de', 'tertiary-container': '#5a4200', 'error': '#ba1a1a', 'on-tertiary-fixed': '#251a00', 'tertiary': '#3f2d00', 'surface-container-low': '#f6f3f2', 'surface-container-lowest': '#ffffff', 'on-secondary-container': '#197161', 'surface': '#fcf9f8', 'on-background': '#1b1b1b', 'on-tertiary': '#ffffff', 'secondary': '#0e6a5b', 'on-tertiary-container': '#e3ab00', 'error-container': '#ffdad6', 'primary': '#003733', 'secondary-fixed': '#a2f2de', 'tertiary-fixed-dim': '#f9bd14', 'on-secondary': '#ffffff', 'on-error-container': '#93000a', 'outline-variant': '#bfc8c6', 'surface-variant': '#e5e2e1', 'tertiary-fixed': '#ffdf9d', 'secondary-fixed-dim': '#86d5c3', 'on-tertiary-fixed-variant': '#5b4300' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-sm': '0.75rem', 'gutter-desktop': '1.5rem', 'space-xxs': '0.25rem', 'space-xl': '2rem', 'space-2xl': '3rem', 'margin-mobile': '1rem', 'space-3xl': '4rem', 'space-xs': '0.5rem', 'margin-tablet': '2rem', 'container-max': '88rem', 'margin-desktop': '3rem', 'space-lg': '1.5rem', 'space-md': '1rem', 'gutter-mobile': '1rem' }, fontFamily: { 'body-md': ['Inter'], 'body-sm': ['Inter'], 'headline-lg-mobile': ['Noto Serif'], 'headline-md': ['Noto Serif'], 'headline-sm': ['Noto Serif'], 'subheading': ['Inter'], 'display-hero-mobile': ['Noto Serif'], 'headline-lg': ['Noto Serif'], 'caption': ['Inter'], 'label-bilingual-kannada': ['Noto Sans'], 'display-hero': ['Noto Serif'], 'label-action': ['Inter'], 'body-lg': ['Inter'] }, fontSize: { 'body-md': ['14px', { lineHeight: '22px', fontWeight: '400' }], 'body-sm': ['13px', { lineHeight: '18px', fontWeight: '400' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', fontWeight: '600' }], 'headline-md': ['22px', { lineHeight: '28px', fontWeight: '600' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'subheading': ['16px', { lineHeight: '24px', letterSpacing: '0.01em', fontWeight: '600' }], 'display-hero-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '700' }], 'headline-lg': ['30px', { lineHeight: '38px', letterSpacing: '-0.015em', fontWeight: '600' }], 'caption': ['11px', { lineHeight: '16px', letterSpacing: '0.04em', fontWeight: '500' }], 'label-bilingual-kannada': ['12px', { lineHeight: '18px', fontWeight: '500' }], 'display-hero': ['40px', { lineHeight: '48px', letterSpacing: '-0.02em', fontWeight: '700' }], 'label-action': ['14px', { lineHeight: '20px', letterSpacing: '0.01em', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '26px', fontWeight: '400' }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 bg-primary text-on-primary shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="bg-primary-container/60 px-margin-desktop py-space-xxs hidden lg:flex items-center justify-between text-caption font-caption text-on-primary-container"><div class="flex items-center gap-space-sm"><span>ಕರ್ನಾಟಕ ಸರ್ಕಾರ | Government of Karnataka</span><span class="opacity-40">•</span><span>Bhoomi Spatial Records Governance</span></div><div class="flex items-center gap-space-md"><span class="bg-tertiary-fixed text-on-tertiary-fixed font-semibold px-space-xs py-0.5 rounded">SIH 2026</span><div class="flex items-center gap-space-xxs text-on-primary-fixed-variant"><button class="hover:text-on-primary text-on-primary-container font-medium transition-colors">ಕನ್ನಡ</button><span class="opacity-40">/</span><button class="hover:text-on-primary text-on-primary font-bold transition-colors">English</button></div></div></div><div class="h-20 max-w-container-max mx-auto px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Bhoomi Setu Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKg2n5Nt8ftef2zj3MXI1_aYijdeKSyyGMSL-m-aq2ez_FK1vyBb_nD7r_8v0vUq_ewLfGSa2NDdpTspzjT4r7sTnvCqnZQJW_bMOmzuHwjska6a3eHGTxwFJltuql1JUnZw1avrTHDSfZ9zRagnGEeHPitj5dmEofhx9Hmi9uMj8bT1pR2QRnXJGeW3PEF87V0Csjj6WFXHiJWItbuiingGlUbgNXkYhTdjF_gATlP8WkSWNsQIAN"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-primary font-bold tracking-tight">ಭೂಮಿ ಸೇತು</span><span class="text-on-primary-container opacity-60 font-light">|</span><span class="font-headline-sm text-headline-sm text-on-primary font-semibold tracking-tight">BHOOMI SETU</span></div><span class="font-label-bilingual-kannada text-label-bilingual-kannada text-on-primary-container hidden sm:inline">Karnataka Spatial Land Acquisition Portal</span></div></div><nav class="hidden md:flex items-center gap-space-xs p-space-xxs bg-primary-container/30 rounded-xl" data-active-classes="bg-primary-container text-on-primary font-label-action text-label-action rounded-lg"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary font-label-action text-label-action rounded-lg" data-path="citizen-portal" href="#">Citizen Portal</a><a class="px-space-md py-space-xs text-on-primary-container hover:bg-primary-container/50 hover:text-on-primary transition-colors text-label-action font-label-action rounded-lg" data-path="officer-dashboard" href="#">Officer Dashboard</a><a class="px-space-md py-space-xs text-on-primary-container hover:bg-primary-container/50 hover:text-on-primary transition-colors text-label-action font-label-action rounded-lg" data-path="interactive-map-and-spatial-gis" href="#">Interactive Map &amp; Spatial GIS</a><a class="px-space-md py-space-xs text-on-primary-container hover:bg-primary-container/50 hover:text-on-primary transition-colors text-label-action font-label-action rounded-lg" data-path="senior-official-portal" href="#">Senior Official Portal</a></nav><div class="flex items-center gap-space-sm"><button aria-label="High Contrast Mode" class="p-space-xs rounded-lg hover:bg-primary-container text-on-primary-container hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[20px]">contrast</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-low text-on-surface-variant py-space-xs px-margin-desktop overflow-x-auto shadow-[0_1px_4px_rgba(0,0,0,0.02)] hidden lg:block"><div class="max-w-container-max mx-auto flex items-center justify-center gap-space-md text-caption font-caption tracking-wider uppercase font-semibold text-on-surface-variant"><span class="flex items-center gap-space-xxs text-primary"><span class="material-symbols-outlined text-[16px]">search</span> Find</span><span class="text-outline-variant">→</span><span class="flex items-center gap-space-xxs text-primary"><span class="material-symbols-outlined text-[16px]">visibility</span> Monitor</span><span class="text-outline-variant">→</span><span class="flex items-center gap-space-xxs text-primary"><span class="material-symbols-outlined text-[16px]">insights</span> Predict</span><span class="text-outline-variant">→</span><span class="flex items-center gap-space-xxs text-primary"><span class="material-symbols-outlined text-[16px]">description</span> Explain</span><span class="text-outline-variant">→</span><span class="flex items-center gap-space-xxs text-primary"><span class="material-symbols-outlined text-[16px]">gshield</span> Prevent</span><span class="text-outline-variant">→</span><span class="flex items-center gap-space-xxs text-primary"><span class="material-symbols-outlined text-[16px]">gavel</span> Act</span></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Canvas Decor -->
+<div class="relative w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-space-xl space-y-space-2xl overflow-hidden">
+<!-- Atmospheric Underlay (No screen-edge leaks) -->
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-tertiary-fixed/20 blur-3xl pointer-events-none -z-10"></div>
+<!-- Administrative Banner / Reference Strip -->
+<section class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">assured_workload</span>
+</div>
+<div class="space-y-space-xxs min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-caption text-caption uppercase tracking-wider text-secondary font-bold">Civilian Spatial Registry</span>
+<span class="text-outline-variant">•</span>
+<span class="bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded-full font-caption text-caption font-semibold">RFCTLARR 2013 Statutory</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">
+            Citizen Services <span class="text-outline-variant font-normal">/</span> ಅರ್ಜಿ ಸ್ಥಿತಿ ಮತ್ತು ಅಧಿಸೂಚನೆಗಳು
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Application Status, Real-Time Cadastral Tracking &amp; Statutory Notifications</p>
+</div>
+</div>
+<!-- Quick Status Pill & Badge ID -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col sm:flex-row sm:items-center gap-space-sm lg:self-center">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-outline uppercase font-semibold">Active Reference ID</span>
+<span class="font-subheading text-subheading text-primary font-bold tracking-wide">APP-LAA-2026-0914</span>
+</div>
+<div class="h-8 w-px bg-surface-container-high hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-outline uppercase font-semibold">Landowner / Parcel</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">K. Ramamurthy <span class="text-outline-variant font-normal">|</span> Sy. No. 142/2A</span>
+</div>
+<span class="inline-flex items-center gap-space-xxs bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption font-semibold px-space-sm py-space-xxs rounded-full self-start sm:self-center">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-ping"></span>
+<span>Hearing In-Progress</span>
+</span>
+</div>
+</section>
+<!-- Top Bento Key Metrics & Statutory Snapshot -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1: Parcel Particulars -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-bilingual-kannada text-label-bilingual-kannada text-outline">ಜಿಲ್ಲೆ ಮತ್ತು ತಾಲ್ಲೂಕು ವಿವರ</span>
+<h2 class="font-subheading text-subheading text-primary">Devanahalli PRR Phase-2</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hobli: Kundana | Village: Maragondanahalli</p>
+</div>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-xs flex items-center justify-between font-caption text-caption text-on-surface-variant">
+<span>Acquisition Extent: <strong>1 Acre 12 Guntas</strong></span>
+<span class="text-secondary font-semibold">RTC Geo-Tagged</span>
+</div>
+</div>
+<!-- Card 2: Interim Award Valuation -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-bilingual-kannada text-label-bilingual-kannada text-outline">ಮೌಲ್ಯಮಾಪನ ಅಂದಾಜು</span>
+<h2 class="font-subheading text-subheading text-primary">₹1,88,50,000 Total Award</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Base Rate: ₹1.45 Cr/Acre + 100% Solatium</p>
+</div>
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+</div>
+<div class="bg-secondary-container/40 rounded-lg p-space-xs flex items-center justify-between font-caption text-caption text-on-secondary-container">
+<span>Escrow Status: <strong>Treasury Verified</strong></span>
+<span class="font-bold">PFMS Linked</span>
+</div>
+</div>
+<!-- Card 3: Next Legal Milestone -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-bilingual-kannada text-label-bilingual-kannada text-outline">ಮುಂದಿನ ಕಾನೂನು ಕ್ರಮ</span>
+<h2 class="font-subheading text-subheading text-tertiary">Feb 12, 2026 • 11:30 AM</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Circle Rate Harmonization Hearing</p>
+</div>
+<div class="w-9 h-9 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">event_upcoming</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-xs flex items-center justify-between font-caption text-caption text-on-surface-variant">
+<span>Venue: AC Office, Bangalore Rural</span>
+<span class="text-tertiary font-bold">In-Person / VC</span>
+</div>
+</div>
+</div>
+<!-- Section 1: Statutory Stepper (RFCTLARR 2013) -->
+<section class="bg-surface-container-lowest rounded-2xl shadow-md p-space-lg md:p-space-xl space-y-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Statutory Acquisition Lifecycle</span>
+<span class="font-label-bilingual-kannada text-label-bilingual-kannada text-on-surface-variant">| ಭೂ ಸ್ವಾಧೀನ ಪ್ರಕ್ರಿಯೆ</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Under Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act, 2013</p>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Official Gazette Sequence</span>
+</div>
+</div>
+<!-- Stepper Matrix (Fluid Responsive) -->
+<div class="w-full overflow-x-auto pb-space-sm">
+<div class="min-w-[780px] grid grid-cols-5 gap-space-xs relative">
+<!-- Continuous Connection Bar Underlay -->
+<div class="absolute top-5 left-[10%] right-[10%] h-1 bg-surface-container -z-0">
+<!-- Completed progress segment -->
+<div class="h-full bg-secondary w-[62%] rounded-full"></div>
+</div>
+<!-- Stage 1: Done -->
+<div class="flex flex-col items-center text-center space-y-space-xs relative z-10">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-caption text-caption font-bold text-secondary uppercase tracking-wider">Stage 01 • Sec 11</span>
+<h3 class="font-subheading text-subheading text-on-surface font-semibold">Preliminary Notice</h3>
+<p class="font-caption text-caption text-on-surface-variant">Gazette Ref: BG-DEV-889</p>
+<span class="inline-block font-caption text-caption text-secondary font-medium bg-secondary-container/30 px-2 py-0.5 rounded">
+                Completed: 15 Oct 2025
+              </span>
+</div>
+</div>
+<!-- Stage 2: Done -->
+<div class="flex flex-col items-center text-center space-y-space-xs relative z-10">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-caption text-caption font-bold text-secondary uppercase tracking-wider">Stage 02 • Sec 15</span>
+<h3 class="font-subheading text-subheading text-on-surface font-semibold">Hearing of Objections</h3>
+<p class="font-caption text-caption text-on-surface-variant">Tahsildar Devanahalli</p>
+<span class="inline-block font-caption text-caption text-secondary font-medium bg-secondary-container/30 px-2 py-0.5 rounded">
+                Completed: 20 Nov 2025
+              </span>
+</div>
+</div>
+<!-- Stage 3: Done -->
+<div class="flex flex-col items-center text-center space-y-space-xs relative z-10">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-caption text-caption font-bold text-secondary uppercase tracking-wider">Stage 03 • Sec 19</span>
+<h3 class="font-subheading text-subheading text-on-surface font-semibold">Final Declaration</h3>
+<p class="font-caption text-caption text-on-surface-variant">Govt of Karnataka Notif.</p>
+<span class="inline-block font-caption text-caption text-secondary font-medium bg-secondary-container/30 px-2 py-0.5 rounded">
+                Completed: 10 Jan 2026
+              </span>
+</div>
+</div>
+<!-- Stage 4: Current Active -->
+<div class="flex flex-col items-center text-center space-y-space-xs relative z-10">
+<div class="w-11 h-11 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shadow-md ring-4 ring-tertiary-fixed/40 animate-pulse">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">rate_review</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-caption text-caption font-bold text-tertiary uppercase tracking-wider">Stage 04 • Sec 21-23</span>
+<h3 class="font-subheading text-subheading text-primary font-bold">Award Inquiry &amp; Valuation</h3>
+<p class="font-caption text-caption text-on-surface-variant">Active Compensation Claim</p>
+<span class="inline-flex items-center gap-1 font-caption text-caption font-semibold bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> In Progress: Feb 2026
+              </span>
+</div>
+</div>
+<!-- Stage 5: Upcoming / Queued -->
+<div class="flex flex-col items-center text-center space-y-space-xs relative z-10 opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-outline flex items-center justify-center shadow-sm ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-caption text-caption font-bold text-outline uppercase tracking-wider">Stage 05 • Disbursal</span>
+<h3 class="font-subheading text-subheading text-on-surface-variant font-medium">Direct Benefit Escrow</h3>
+<p class="font-caption text-caption text-on-surface-variant">Aadhaar PFMS Transfer</p>
+<span class="inline-block font-caption text-caption text-outline bg-surface-container px-2 py-0.5 rounded">
+                Upcoming / Queued
+              </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Action Alert Box inside Stepper Section -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">info</span>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Statutory Time Constraint for Current Stage</p>
+<p class="font-caption text-caption text-on-surface-variant">Under Section 25 of the 2013 Act, the SLA to declare an Award lapses on Jan 09, 2027 (12 months from Sec 19 notification).</p>
+</div>
+</div>
+<button class="shrink-0 bg-surface-container-lowest text-primary px-space-md py-space-xs rounded-lg font-label-action text-label-action font-semibold hover:bg-primary hover:text-on-primary shadow-sm transition-colors">
+          View SLA Timeline Audit
+        </button>
+</div>
+</section>
+<!-- Section 2 & Section 3 Combined Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Section 2 Live Notification & Delay Alert Feed (7 cols) -->
+<section class="lg:col-span-7 space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">notifications_active</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Statutory Notifications &amp; Alerts</h2>
+</div>
+<span class="font-caption text-caption text-secondary font-bold bg-secondary-container px-space-xs py-0.5 rounded">2 New Actions Required</span>
+</div>
+<div class="space-y-space-md">
+<!-- Notification 1: Gazette Pub -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md transition-all hover:shadow-lg space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-caption text-caption font-semibold text-secondary uppercase tracking-wider">Statutory Gazette Notification</span>
+</div>
+<span class="font-caption text-caption text-outline">2 days ago (29 Jan 2026, 11:20 AM)</span>
+</div>
+<div>
+<h3 class="font-subheading text-subheading text-on-surface font-bold">Notice under Section 19(1) Published</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xxs">
+                Gazette notification issued for Devanahalli PRR Phase-2. Your parcel <span class="font-semibold text-primary">Sy. No. 142/2A</span> has been awarded preliminary base rate of <span class="font-semibold text-on-surface">₹1.45 Cr/Acre</span> with solatium. Please upload Form 14 bank details.
+              </p>
+</div>
+<!-- Context snippet -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-wrap items-center justify-between gap-space-xs font-caption text-caption text-on-surface-variant">
+<span>Gazette Order No: <strong>RD-104-AQ-BLR-2026</strong></span>
+<span class="text-secondary font-medium">Digital Signature Validated</span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xxs font-caption text-caption text-outline">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+<span>Mandate deadline: 15 Feb 2026</span>
+</div>
+<button class="inline-flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-xs rounded-lg font-label-action text-label-action hover:bg-primary-container shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+<span>Upload Bank Mandate / Aadhaar</span>
+</button>
+</div>
+</div>
+<!-- Notification 2: AI Discrepancy Alert -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md transition-all hover:shadow-lg space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-caption text-caption font-semibold text-tertiary uppercase tracking-wider">Proactive Dispute Mitigation Alert</span>
+</div>
+<span class="font-caption text-caption text-outline">4 days ago (27 Jan 2026, 04:45 PM)</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-subheading text-subheading text-on-surface font-bold">AI Valuation Discrepancy Alert</h3>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption px-space-xs py-0.5 rounded font-bold">Algorithm Detected</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xxs">
+                Our ML algorithm detected a <span class="font-bold text-tertiary">93% deviation</span> between claimed rate and local circle rate. Tahsildar has scheduled a Circle Rate Harmonization Hearing on <span class="font-semibold text-on-surface">Feb 12</span> to prevent tribunal escalation.
+              </p>
+</div>
+<!-- Mini Inline Comparison Spark Visual -->
+<div class="bg-tertiary-fixed/20 rounded-xl p-space-sm space-y-space-xs">
+<div class="flex items-center justify-between font-caption text-caption text-on-tertiary-fixed-variant">
+<span>Circle Rate Standard: ₹75.2 L/Acre</span>
+<span class="font-bold">Claimed: ₹1.45 Cr/Acre (+93%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full w-1/2"></div>
+<div class="bg-tertiary-fixed-dim h-full w-1/2"></div>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">Preventive action prevents estimated 14-month district court freeze.</p>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xxs font-caption text-caption text-outline">
+<span class="material-symbols-outlined text-[16px]">gavel</span>
+<span>Sub-Divisional Officer Forum</span>
+</div>
+<button class="inline-flex items-center gap-space-xs bg-tertiary-fixed text-on-tertiary-fixed px-space-md py-space-xs rounded-lg font-label-action text-label-action font-semibold hover:bg-tertiary-fixed-dim shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+<span>Confirm Attendance Online</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Geospatial Context Vignette -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-14 h-14 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<div class="w-full h-full bg-cover bg-center" data-location="Devanahalli, Bengaluru, Karnataka" style=""></div>
+</div>
+<div>
+<span class="font-caption text-caption text-secondary font-bold uppercase">Cadastral Visualizer</span>
+<h4 class="font-subheading text-subheading text-primary font-bold">Devanahalli PRR Alignment Corridor</h4>
+<p class="font-caption text-caption text-on-surface-variant">Coordinates: 13.2458° N, 77.7126° E • KSRSAC Overlay Active</p>
+</div>
+</div>
+<button class="shrink-0 bg-surface-container-low text-primary px-space-sm py-space-xs rounded-lg font-label-action text-label-action font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-colors">
+            Open in Spatial GIS →
+          </button>
+</div>
+</section>
+<!-- Right Column: Section 3 Document Repository & Landowner Quick Action (5 cols) -->
+<section class="lg:col-span-5 space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">folder_special</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Document Repository</h2>
+</div>
+<span class="font-label-bilingual-kannada text-label-bilingual-kannada text-on-surface-variant">ದಾಖಲೆಗಳ ಖಜಾನೆ</span>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md space-y-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Tamper-proof statutory records certified via Karnataka e-Pothi and Bhoomi Cadastral Ledger.
+          </p>
+<!-- Document Item 1: Form 14 -->
+<div class="bg-surface-container-low rounded-xl p-space-md transition-all hover:bg-surface-container space-y-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[26px]">task</span>
+<div>
+<h3 class="font-subheading text-subheading text-primary font-semibold">Form 14 Compensation Claim</h3>
+<p class="font-caption text-caption text-on-surface-variant">Reference: CLM-142-2A-2025</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container font-caption text-caption px-space-xs py-0.5 rounded-full font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Submitted &amp; Verified
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-caption text-caption text-on-surface-variant">
+<span>Timestamp: 18 Jan 2026, 02:14 PM</span>
+<a class="text-secondary font-semibold hover:underline flex items-center gap-0.5" href="#">
+<span class="material-symbols-outlined text-[14px]">visibility</span> View Receipt
+              </a>
+</div>
+</div>
+<!-- Document Item 2: Revenue Sketch -->
+<div class="bg-surface-container-low rounded-xl p-space-md transition-all hover:bg-surface-container space-y-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[26px]">map</span>
+<div>
+<h3 class="font-subheading text-subheading text-primary font-semibold">Revenue Sketch (Akarbandh &amp; Tippani)</h3>
+<p class="font-caption text-caption text-on-surface-variant">Geo-referenced boundary map (Devanahalli Taluk)</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container font-caption text-caption px-space-xs py-0.5 rounded-full font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Verified Vector
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-caption text-caption text-on-surface-variant">
+<span>Size: 4.8 MB PDF • Digital Seal</span>
+<button class="text-primary font-bold hover:text-secondary flex items-center gap-1 bg-surface-container-lowest px-space-xs py-1 rounded shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">download</span> Download PDF
+              </button>
+</div>
+</div>
+<!-- Document Item 3: Heirship Affidavit -->
+<div class="bg-surface-container-low rounded-xl p-space-md transition-all hover:bg-surface-container space-y-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[26px]">pending_actions</span>
+<div>
+<h3 class="font-subheading text-subheading text-primary font-semibold">Legal Heirship Affidavit</h3>
+<p class="font-caption text-caption text-on-surface-variant">Family Tree certification for joint ownership</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption px-space-xs py-0.5 rounded-full font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Pending Signature
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs font-caption text-caption text-on-surface-variant">
+<span>Under review by Tahsildar Office</span>
+<button class="text-tertiary font-bold hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">send</span> Send Reminder
+              </button>
+</div>
+</div>
+<!-- Direct Upload Callout Card -->
+<div class="bg-surface-container p-space-md rounded-xl space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">add_moderator</span>
+<span class="font-subheading text-subheading text-primary font-bold">Have an Objections Memorandum?</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant">
+              Citizen appeals under Section 15(2) may be tendered directly with certified notarization.
+            </p>
+<button class="w-full mt-space-xs bg-surface-container-lowest text-primary py-space-xs rounded-lg font-label-action text-label-action font-semibold hover:bg-primary hover:text-on-primary shadow-sm transition-colors flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">attachment</span>
+<span>Submit Supplementary Form</span>
+</button>
+</div>
+<!-- Official Certified Seal Strip -->
+<div class="flex items-center gap-space-sm p-space-xs rounded-lg bg-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="font-caption text-caption text-on-surface-variant">
+<p class="font-bold text-primary">Certified Geo-Spatial Ledger</p>
+<p>Signatures cryptographically bound under IT Act Sec 3A &amp; Karnataka KTPP Norms.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Supplementary Public Notice Disclaimer / Helpdesk Banner -->
+<section class="bg-primary text-on-primary rounded-2xl p-space-lg shadow-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xxs text-center md:text-left">
+<div class="flex items-center justify-center md:justify-start gap-space-xs">
+<span class="font-label-bilingual-kannada text-label-bilingual-kannada text-tertiary-fixed">ಸಹಾಯವಾಣಿ &amp; ಕಾನೂನು ನೆರವು</span>
+<span class="opacity-40">•</span>
+<span class="font-caption text-caption uppercase tracking-wider text-on-primary-container">Legal Helpdesk &amp; Grievance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold">Need assistance with your Award Inquiry or Form 14?</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container max-w-2xl">
+          Devanahalli Acquisition Division SLA Officers are available on all government working days. You can also file a direct grievance through Bhoomi Setu Janasnehi desk.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0 w-full sm:w-auto">
+<button class="w-full sm:w-auto bg-tertiary-fixed text-on-tertiary-fixed px-space-lg py-space-xs rounded-lg font-label-action text-label-action font-bold hover:bg-tertiary-fixed-dim transition-colors shadow-sm flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>Toll-Free 1800-425-9999</span>
+</button>
+<button class="w-full sm:w-auto bg-primary-container text-on-primary px-space-lg py-space-xs rounded-lg font-label-action text-label-action font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-colors flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+<span>Raise Grievance Token</span>
+</button>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant mt-space-3xl"><div class="max-w-container-max mx-auto px-margin-desktop py-space-2xl grid grid-cols-1 md:grid-cols-4 gap-space-xl"><div class="space-y-space-xs"><div class="flex items-center gap-space-xs"><img alt="Bhoomi Setu Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKg2n5Nt8ftef2zj3MXI1_aYijdeKSyyGMSL-m-aq2ez_FK1vyBb_nD7r_8v0vUq_ewLfGSa2NDdpTspzjT4r7sTnvCqnZQJW_bMOmzuHwjska6a3eHGTxwFJltuql1JUnZw1avrTHDSfZ9zRagnGEeHPitj5dmEofhx9Hmi9uMj8bT1pR2QRnXJGeW3PEF87V0Csjj6WFXHiJWItbuiingGlUbgNXkYhTdjF_gATlP8WkSWNsQIAN"/><span class="font-headline-sm text-headline-sm font-bold text-primary">ಭೂಮಿ ಸೇತು</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Karnataka State Integrated Spatial Land Acquisition &amp; Governance Information System. Designed under SIH 2026 initiative.</p></div><div><h4 class="font-subheading text-subheading text-primary mb-space-sm">Public Access</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Check Parcel Status</a></li><li><a class="hover:text-primary transition-colors" href="#">Public Notification Gazette</a></li><li><a class="hover:text-primary transition-colors" href="#">Landowner Compensation Calculator</a></li><li><a class="hover:text-primary transition-colors" href="#">Grievance Redressal Mechanism</a></li></ul></div><div><h4 class="font-subheading text-subheading text-primary mb-space-sm">Statutory Administration</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Revenue Department Circulars</a></li><li><a class="hover:text-primary transition-colors" href="#">Karnataka Land Reforms Guidelines</a></li><li><a class="hover:text-primary transition-colors" href="#">Survey Cadastral Maps</a></li><li><a class="hover:text-primary transition-colors" href="#">High Court Directives</a></li></ul></div><div><h4 class="font-subheading text-subheading text-primary mb-space-sm">Security &amp; Compliance</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Certified Geo-Spatial Ledger powered by Karnataka State Remote Sensing Applications Centre (KSRSAC).</p><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption"><span class="w-2 h-2 rounded-full bg-secondary"></span><span>Secure State Gov Portal</span></div></div></div><div class="bg-surface-container py-space-sm px-margin-desktop text-center font-caption text-caption text-on-surface-variant">© 2026 Revenue Department, Government of Karnataka. All Rights Reserved. Smart India Hackathon Prototype.</div></footer></body></html>

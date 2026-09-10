@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'primary-fixed': '#b2eee7', 'on-primary-fixed-variant': '#0c4f4a', 'on-secondary-fixed': '#00201a', 'primary-fixed-dim': '#96d2cb', 'primary-container': '#0b4f4a', 'on-primary-container': '#84bfb8', 'on-primary-fixed': '#00201d', 'on-surface-variant': '#3f4947', 'surface-container-high': '#eae7e7', 'on-secondary-fixed-variant': '#005144', 'background': '#fcf9f8', 'on-surface': '#1b1b1b', 'on-primary': '#ffffff', 'on-error': '#ffffff', 'surface-container-highest': '#e5e2e1', 'inverse-on-surface': '#f3f0ef', 'surface-container': '#f0eded', 'surface-bright': '#fcf9f8', 'surface-tint': '#2c6862', 'inverse-surface': '#313030', 'outline': '#707977', 'surface-dim': '#dcd9d9', 'inverse-primary': '#96d2cb', 'secondary-container': '#a2f2de', 'tertiary-container': '#5a4200', 'error': '#ba1a1a', 'on-tertiary-fixed': '#251a00', 'tertiary': '#3f2d00', 'surface-container-low': '#f6f3f2', 'surface-container-lowest': '#ffffff', 'on-secondary-container': '#197161', 'surface': '#fcf9f8', 'on-background': '#1b1b1b', 'on-tertiary': '#ffffff', 'secondary': '#0e6a5b', 'on-tertiary-container': '#e3ab00', 'error-container': '#ffdad6', 'primary': '#003733', 'secondary-fixed': '#a2f2de', 'tertiary-fixed-dim': '#f9bd14', 'on-secondary': '#ffffff', 'on-error-container': '#93000a', 'outline-variant': '#bfc8c6', 'surface-variant': '#e5e2e1', 'tertiary-fixed': '#ffdf9d', 'secondary-fixed-dim': '#86d5c3', 'on-tertiary-fixed-variant': '#5b4300' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-sm': '0.75rem', 'gutter-desktop': '1.5rem', 'space-xxs': '0.25rem', 'space-xl': '2rem', 'space-2xl': '3rem', 'margin-mobile': '1rem', 'space-3xl': '4rem', 'space-xs': '0.5rem', 'margin-tablet': '2rem', 'container-max': '88rem', 'margin-desktop': '3rem', 'space-lg': '1.5rem', 'space-md': '1rem', 'gutter-mobile': '1rem' }, fontFamily: { 'body-md': ['Inter'], 'body-sm': ['Inter'], 'headline-lg-mobile': ['Noto Serif'], 'headline-md': ['Noto Serif'], 'headline-sm': ['Noto Serif'], 'subheading': ['Inter'], 'display-hero-mobile': ['Noto Serif'], 'headline-lg': ['Noto Serif'], 'caption': ['Inter'], 'label-bilingual-kannada': ['Noto Sans'], 'display-hero': ['Noto Serif'], 'label-action': ['Inter'], 'body-lg': ['Inter'] }, fontSize: { 'body-md': ['14px', { lineHeight: '22px', fontWeight: '400' }], 'body-sm': ['13px', { lineHeight: '18px', fontWeight: '400' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', fontWeight: '600' }], 'headline-md': ['22px', { lineHeight: '28px', fontWeight: '600' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'subheading': ['16px', { lineHeight: '24px', letterSpacing: '0.01em', fontWeight: '600' }], 'display-hero-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '700' }], 'headline-lg': ['30px', { lineHeight: '38px', letterSpacing: '-0.015em', fontWeight: '600' }], 'caption': ['11px', { lineHeight: '16px', letterSpacing: '0.04em', fontWeight: '500' }], 'label-bilingual-kannada': ['12px', { lineHeight: '18px', fontWeight: '500' }], 'display-hero': ['40px', { lineHeight: '48px', letterSpacing: '-0.02em', fontWeight: '700' }], 'label-action': ['14px', { lineHeight: '20px', letterSpacing: '0.01em', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '26px', fontWeight: '400' }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="p-space-lg flex items-center gap-space-sm bg-primary text-on-primary"><img alt="Bhoomi Setu Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKg2n5Nt8ftef2zj3MXI1_aYijdeKSyyGMSL-m-aq2ez_FK1vyBb_nD7r_8v0vUq_ewLfGSa2NDdpTspzjT4r7sTnvCqnZQJW_bMOmzuHwjska6a3eHGTxwFJltuql1JUnZw1avrTHDSfZ9zRagnGEeHPitj5dmEofhx9Hmi9uMj8bT1pR2QRnXJGeW3PEF87V0Csjj6WFXHiJWItbuiingGlUbgNXkYhTdjF_gATlP8WkSWNsQIAN"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary font-bold">ಭೂಮಿ ಸೇತು</span><span class="font-caption text-caption text-on-primary-container tracking-wider uppercase font-semibold">Spatial Operations</span></div></div><div class="px-space-md py-space-sm bg-surface-container-low"><div class="flex items-center justify-between text-caption font-caption text-on-surface-variant"><span class="font-medium">Portal Context</span><span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">SIH 2026</span></div></div><nav class="flex-1 px-space-sm py-space-md space-y-space-xxs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-semibold"><div class="px-space-sm py-space-xxs text-caption font-caption uppercase tracking-wider text-on-surface-variant font-semibold">Acquisition Lifecycle</div><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-primary-container text-on-primary font-semibold" data-path="officer-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-action text-label-action">Officer Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="interactive-map-and-spatial-gis" href="#"><span class="material-symbols-outlined text-[20px]">layers</span><span class="font-label-action text-label-action">Spatial GIS &amp; Map</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="senior-official-portal" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-action text-label-action">Senior Official Portal</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="citizen-portal" href="#"><span class="material-symbols-outlined text-[20px]">public</span><span class="font-label-action text-label-action">Citizen Portal</span></a><div class="pt-space-md px-space-sm py-space-xxs text-caption font-caption uppercase tracking-wider text-on-surface-variant font-semibold">Lifecycle Steps</div><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg transition-all bg-primary-container text-on-primary font-semibold" data-path="officer-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">search</span><span>Find &amp; Survey</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg transition-all bg-primary-container text-on-primary font-semibold" data-path="officer-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">visibility</span><span>Monitor Progress</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all text-body-sm font-body-sm" data-path="senior-official-portal" href="#"><span class="material-symbols-outlined text-[18px]">insights</span><span>Predict Bottlenecks</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg transition-all bg-primary-container text-on-primary font-semibold" data-path="officer-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">gshield</span><span>Prevent &amp; Act</span></a></nav><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant mb-space-xxs"><span class="font-medium">Kannada Mode</span><button class="px-space-xs py-space-xxs rounded bg-surface-container-highest text-caption font-caption font-semibold hover:bg-primary hover:text-on-primary transition-colors">ಕನ್ನಡ</button></div><div class="text-caption font-caption text-on-surface-variant">Revenue Dept, Govt. of Karnataka</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-sm"><span class="font-label-bilingual-kannada text-label-bilingual-kannada bg-surface-container px-space-xs py-1 rounded text-on-surface-variant">ಕರ್ನಾಟಕ ರಾಜ್ಯ ಭೂಸ್ವಾಧೀನ ವೇದಿಕೆ</span><div class="hidden xl:flex items-center gap-space-xs text-caption font-caption text-on-surface-variant font-medium"><span class="text-primary font-semibold">Find</span><span>→</span><span class="text-primary font-semibold">Monitor</span><span>→</span><span class="text-primary font-semibold">Predict</span><span>→</span><span class="text-primary font-semibold">Explain</span><span>→</span><span class="text-primary font-semibold">Prevent</span><span>→</span><span class="text-primary font-semibold">Act</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden sm:block"><span class="material-symbols-outlined absolute left-2.5 top-2 text-[18px] text-on-surface-variant">search</span><input class="pl-8 pr-3 py-1.5 rounded-lg bg-surface-container text-body-sm font-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary w-64" placeholder="Search Survey No. / Khasra..." type="text"/></div><button aria-label="Notifications" class="p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-background w-full px-gutter-desktop py-space-lg"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Top Breadcrumb & Executive Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">account_balance</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Officer Workspace</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-subheading">Land Acquisition Operations</span>
+<span class="ml-space-xs px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-bilingual-kannada text-label-bilingual-kannada">ಕಾರ್ಯನಿರ್ವಾಹಕ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್</span>
+</div>
+<!-- Active Step Flow Ribbon -->
+<div class="flex items-center bg-surface-container px-space-md py-1.5 rounded-lg text-caption font-caption text-on-surface-variant">
+<span class="font-medium">Find</span>
+<span class="mx-1.5 text-outline-variant">→</span>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-semibold shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+        Monitor
+      </span>
+<span class="mx-1.5 text-outline-variant">→</span>
+<span class="font-medium">Predict</span>
+<span class="mx-1.5 text-outline-variant">→</span>
+<span class="font-medium">Explain</span>
+<span class="mx-1.5 text-outline-variant">→</span>
+<span class="font-medium">Prevent</span>
+<span class="mx-1.5 text-outline-variant">→</span>
+<span class="font-medium">Act</span>
+</div>
+</div>
+<!-- Quick Operational Tabs -->
+<div class="flex items-center justify-between border-b border-surface-container-highest pb-space-xxs overflow-x-auto">
+<div class="flex items-center gap-space-xs min-w-max">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-action text-label-action shadow-sm">
+<span class="material-symbols-outlined text-[18px]">space_dashboard</span>
+        Dashboard Overview
+      </button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-action text-label-action">
+<span class="material-symbols-outlined text-[18px]">map</span>
+        Map View
+      </button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-action text-label-action relative">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+        Approvals
+        <span class="ml-1 px-1.5 py-0.2 rounded-full bg-error text-on-error text-[10px] font-bold">3 Pending</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-action text-label-action">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+        Disputes &amp; Claims
+      </button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-action text-label-action">
+<span class="material-symbols-outlined text-[18px]">family_restroom</span>
+        Rehabilitation (R&amp;R)
+      </button>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs text-caption font-caption text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Live Sync: K-GIS &amp; Bhoomi Core Engine</span>
+</div>
+</div>
+<!-- Four Key Stat Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">Active Acquisitions</span>
+<div class="text-headline-md font-headline-md text-on-surface mt-1 group-hover:text-primary transition-colors">12 Projects</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[22px]">source</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="truncate">Bengaluru Urban &amp; Rural</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-semibold text-[11px]">+2 New</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">Pending Approvals</span>
+<div class="text-headline-md font-headline-md text-on-surface mt-1 group-hover:text-primary transition-colors">7 Notices</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Section 11 &amp; 19 Gazettes</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-semibold text-[11px]">3 Critical</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">Delay Prediction</span>
+<div class="text-headline-md font-headline-md text-error mt-1 flex items-baseline gap-1">
+            18
+            <span class="text-caption font-caption text-on-surface-variant font-normal">Parcels flagged</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="text-error font-medium">Flagged by Spatial ML</span>
+<span class="text-caption font-caption">Avg delay +38d</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">Disbursal Audit</span>
+<div class="text-headline-md font-headline-md text-secondary mt-1">91.4%</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[22px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Direct Beneficiary PFMS</span>
+<span class="text-secondary font-semibold text-[11px]">On Schedule</span>
+</div>
+</div>
+</div>
+<!-- Central Intelligence AI Alert Bar -->
+<div class="bg-gradient-to-r from-primary-container via-primary to-primary-container p-space-md rounded-xl shadow-sm text-on-primary flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0 animate-bounce">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed text-caption font-caption uppercase font-bold">Predictive AI Alert</span>
+<span class="font-label-bilingual-kannada text-label-bilingual-kannada text-primary-fixed-dim">ಸ್ವಯಂಚಾಲಿತ ಮುನ್ಸೂಚನೆ</span>
+</div>
+<p class="text-body-sm font-body-sm text-surface-container-lowest mt-0.5">
+          ML Model flagged <span class="font-bold text-secondary-fixed">3 parcels</span> in Ramanagara Industrial Sub-Corridor with <span class="underline decoration-secondary-fixed font-semibold">+45 days projected legal bottleneck</span> due to circle rate escalation claims.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<button class="px-space-md py-1.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-action text-label-action hover:bg-secondary-fixed-dim transition-colors shadow-sm">
+        Review Mitigations
+      </button>
+<button aria-label="Dismiss Alert" class="p-1.5 rounded-lg hover:bg-white/10 text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Primary Operations Split Grid (60% Left / 40% Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT COLUMN (60% -> 7 Cols on desktop, 12 on mobile) -->
+<div class="lg:col-span-7 flex flex-col space-y-space-lg">
+<!-- Risk Level Bar Breakdown Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Acquisition Projects by Delay Risk</h2>
+<p class="text-caption font-caption text-on-surface-variant">Real-time risk scoring across 44 total monitored land parcels in active gazettes</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-1 rounded bg-surface-container text-caption font-caption font-semibold text-on-surface-variant">Total: 44 Parcels</span>
+</div>
+</div>
+<!-- Visual Distribution Bar -->
+<div class="w-full h-4 rounded-full bg-surface-container flex overflow-hidden p-0.5">
+<div class="h-full bg-secondary rounded-l-full transition-all duration-500 hover:opacity-90" style="width: 54.5%;" title="Low Risk: 24 parcels (54.5%)"></div>
+<div class="h-full bg-tertiary-fixed-dim transition-all duration-500 hover:opacity-90 mx-0.5" style="width: 31.8%;" title="Medium Risk: 14 parcels (31.8%)"></div>
+<div class="h-full bg-error rounded-r-full transition-all duration-500 hover:opacity-90" style="width: 13.7%;" title="High Risk: 6 parcels (13.7%)"></div>
+</div>
+<!-- Interactive Legend / Breakdown Blocks -->
+<div class="grid grid-cols-3 gap-space-sm mt-space-md pt-space-sm border-t border-surface-container">
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 text-caption font-caption text-on-surface-variant font-medium">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>Low Risk</span>
+</div>
+<div class="mt-1 flex items-baseline justify-between">
+<span class="text-subheading font-subheading text-secondary">24</span>
+<span class="text-caption font-caption text-on-surface-variant">54.5%</span>
+</div>
+<span class="text-[11px] text-on-surface-variant truncate block mt-0.5">On Schedule</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 text-caption font-caption text-on-surface-variant font-medium">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Medium Risk</span>
+</div>
+<div class="mt-1 flex items-baseline justify-between">
+<span class="text-subheading font-subheading text-tertiary-container">14</span>
+<span class="text-caption font-caption text-on-surface-variant">31.8%</span>
+</div>
+<span class="text-[11px] text-on-surface-variant truncate block mt-0.5">Notice Review</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="flex items-center gap-1.5 text-caption font-caption text-on-surface-variant font-medium">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span>High Risk</span>
+</div>
+<div class="mt-1 flex items-baseline justify-between">
+<span class="text-subheading font-subheading text-error">6</span>
+<span class="text-caption font-caption text-on-surface-variant">13.7%</span>
+</div>
+<span class="text-[11px] text-error font-medium truncate block mt-0.5">Intervention Req.</span>
+</div>
+</div>
+</div>
+<!-- High-Risk Critical Projects Section -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[22px]">notification_important</span>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Critical Projects Requiring Action</h2>
+</div>
+<span class="text-caption font-caption text-on-surface-variant">2 Projects Escalated</span>
+</div>
+<div class="space-y-space-md">
+<!-- Mock Record 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col space-y-space-sm group">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-caption font-caption font-bold">PRJ-BLR-2026-08</span>
+<span class="px-2 py-0.5 rounded-full bg-red-100 text-error font-caption font-caption font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+                    ಹೆಚ್ಚಿನ ಅಪಾಯ | High Risk 88%
+                  </span>
+</div>
+<h3 class="text-subheading font-subheading text-on-surface mt-1 group-hover:text-primary transition-colors">
+                  Peripheral Ring Road Phase 2 (Devanahalli Taluk)
+                </h3>
+</div>
+<span class="px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-action text-caption font-semibold self-start sm:self-center">
+                Action Required
+              </span>
+</div>
+<!-- Context Details -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs text-body-sm font-body-sm text-on-surface-variant bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">report</span>
+<span><strong>Primary Bottleneck:</strong> Disputed Circle Rate &amp; Sec 19 Delay</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">schedule</span>
+<span><strong>Projected Delay:</strong> +64 Days beyond Gazette</span>
+</div>
+</div>
+<!-- Footer Action Band -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs text-caption font-caption text-on-surface-variant">
+<span>Affected: 14 Landowners</span>
+<span>•</span>
+<span>Survey No. 142/2A to 148/1</span>
+</div>
+<button class="flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-action text-label-action hover:bg-secondary transition-all shadow-sm">
+<span>Inspect Project &amp; Parcels</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Mock Record 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col space-y-space-sm group">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-caption font-caption font-bold">PRJ-RAM-2026-03</span>
+<span class="px-2 py-0.5 rounded-full bg-amber-100 text-tertiary-container font-caption font-caption font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+                    ಮಧ್ಯಮ ಅಪಾಯ | Medium Risk 62%
+                  </span>
+</div>
+<h3 class="text-subheading font-subheading text-on-surface mt-1 group-hover:text-primary transition-colors">
+                  Ramanagara Industrial Sub-Corridor (Bidadi Taluk)
+                </h3>
+</div>
+<span class="px-2.5 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-action text-caption font-semibold self-start sm:self-center">
+                Settlement Pending
+              </span>
+</div>
+<!-- Context Details -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs text-body-sm font-body-sm text-on-surface-variant bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">handshake</span>
+<span><strong>Primary Bottleneck:</strong> Rehabilitation Settlement Pending (R&amp;R 2nd Tranche)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">schedule</span>
+<span><strong>Projected Delay:</strong> +28 Days</span>
+</div>
+</div>
+<!-- Footer Action Band -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs text-caption font-caption text-on-surface-variant">
+<span>Affected: 9 Industrial Units</span>
+<span>•</span>
+<span>KIADB Notified Zone</span>
+</div>
+<button class="flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container-highest text-primary hover:bg-primary hover:text-on-primary font-label-action text-label-action transition-all">
+<span>Review Audit</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (40% -> 5 Cols on desktop, 12 on mobile) -->
+<div class="lg:col-span-5 flex flex-col space-y-space-lg">
+<!-- Quick Spatial Preview Map Widget -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">qr_code_2</span>
+<h2 class="text-subheading font-subheading text-on-surface">Spatial Corridor Preview</h2>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-caption font-caption text-on-surface-variant font-semibold">Bengaluru Urban - Rural</span>
+</div>
+<!-- Map Container -->
+<div class="relative w-full h-60 rounded-lg overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center" data-location="Devanahalli, Bengaluru Rural, Karnataka, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8VQHB2y4L3l-b4Qd8XwlsS3viZAFGvI-DGnLO6LIRaolGctxmBGBLLQv1U-_EPKbVtRdSvuMnDPJspe8ExtoKgIsQChVuYEL1ZFQpEwW1B6FJyreOOI1VgH9PCl_UhVoYf-OKgMAg9OlP-k9LCs3xf0goWeG0oDbbWY5e6wAoIMvGa0ni0K8VcwYtTP4wdA_Qzw7dPpn3vLPejpFoGGb-3VFrhw2O7KH6Oo60t6_i5qgRNN-H0w')">
+</div>
+<!-- Map Overlay Controls -->
+<div class="absolute top-2 left-2 flex flex-col gap-1 bg-surface-container-lowest/90 backdrop-blur p-1.5 rounded-lg shadow-md text-caption font-caption">
+<div class="flex items-center gap-1.5 px-1 text-on-surface font-medium">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Devanahalli Hub (18 Parcels)</span>
+</div>
+<div class="flex items-center gap-1.5 px-1 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Bidadi Corridor (Clean)</span>
+</div>
+</div>
+<div class="absolute bottom-2 right-2 flex items-center gap-1">
+<a class="px-space-sm py-1 rounded bg-primary text-on-primary text-caption font-caption font-semibold flex items-center gap-1 shadow hover:bg-secondary transition-colors" data-path="interactive-map-and-spatial-gis" href="#">
+<span>Full GIS Canvas</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">satellite_alt</span>
+            Sentinel-2 Optical (Updated 4h ago)
+          </span>
+<span class="font-mono text-[10px]">EPSG: 4326 | WGS 84</span>
+</div>
+</div>
+<!-- Officer Action Queue -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col flex-1">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">assignment_turned_in</span>
+<h2 class="text-subheading font-subheading text-on-surface">Officer Action Queue</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-caption font-caption font-bold">2 Due Today</span>
+</div>
+<div class="space-y-space-sm flex-1">
+<!-- Queue Task 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-error text-[18px] mt-0.5">priority_high</span>
+<div>
+<h3 class="text-body-sm font-body-sm font-semibold text-on-surface">Verify Survey No. 142/2A</h3>
+<p class="text-caption font-caption text-on-surface-variant">Devanahalli Taluk • Disputed Boundary demarcation request from landowner</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-caption font-caption font-bold whitespace-nowrap">
+                48 hrs left
+              </span>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container">
+<span class="text-[11px] text-on-surface-variant font-mono">ID: TSK-2026-904</span>
+<button class="text-primary hover:text-secondary font-label-action text-caption font-semibold flex items-center gap-0.5">
+                Verify Geospatial Boundary →
+              </button>
+</div>
+</div>
+<!-- Queue Task 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">description</span>
+<div>
+<h3 class="text-body-sm font-body-sm font-semibold text-on-surface">Review DC Sec 11 Gazette Notice</h3>
+<p class="text-caption font-caption text-on-surface-variant">Ramanagara Collectorate • Draft Notification signature endorsement</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-caption font-caption font-bold whitespace-nowrap">
+                3 days left
+              </span>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container">
+<span class="text-[11px] text-on-surface-variant font-mono">ID: TSK-2026-881</span>
+<button class="text-primary hover:text-secondary font-label-action text-caption font-semibold flex items-center gap-0.5">
+                Review &amp; Endorse →
+              </button>
+</div>
+</div>
+</div>
+<!-- Quick Summary Footer in queue -->
+<div class="mt-space-md pt-space-xs border-t border-surface-container flex items-center justify-between text-caption font-caption text-on-surface-variant">
+<span>Official Task Queue (Karnataka LAA 2013)</span>
+<a class="text-primary font-semibold hover:underline" href="#">View All Tasks (14)</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Administrative Audit Footer Metadata Strip -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm px-space-md py-space-sm bg-surface-container-low rounded-lg text-caption font-caption text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="font-medium text-on-surface">Secured Spatial Session:</span>
+<span class="font-mono text-[11px]">BHOOMI-BLR-OFF-NODE-4</span>
+<span class="text-outline-variant">•</span>
+<span>Karnataka Geographic Information System (K-GIS) Verified</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span>Last sync: 2 mins ago</span>
+<button class="p-1 rounded hover:bg-surface-container text-primary flex items-center" title="Refresh Dashboard Feed">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+</button>
+</div>
+</div>
+</div></main></div></body></html>

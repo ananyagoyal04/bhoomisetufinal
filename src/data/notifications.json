@@ -1,0 +1,44 @@
+[
+  {
+    "id": "notif-01",
+    "type": "Gazette Alert",
+    "kannadaType": "ಕಾನೂನುಬದ್ಧ ಗೆಜೆಟ್ ಅಧಿಸೂಚನೆ",
+    "title": "Notice under Section 19(1) Published",
+    "message": "Gazette notification issued for Devanahalli PRR Phase-2. Your parcel Sy. No. 142/2A has been awarded preliminary base rate of ₹1.45 Cr/Acre with 100% solatium. Please upload Form 14 bank details.",
+    "date": "2026-08-14",
+    "time": "11:20 AM",
+    "refNo": "RD-104-AQ-BLR-2026",
+    "status": "Action Required",
+    "actionText": "Upload Bank Mandate / Aadhaar",
+    "severity": "primary",
+    "deadline": "15 Feb 2026"
+  },
+  {
+    "id": "notif-02",
+    "type": "Valuation Hearing",
+    "kannadaType": "ಮುನ್ನೆಚ್ಚರಿಕೆ ವಿವಾದ ಪರಿಹಾರ ಎಚ್ಚರಿಕೆ",
+    "title": "AI Valuation Discrepancy Alert",
+    "message": "Our ML algorithm detected a 93% deviation between claimed rate and local circle rate. Tahsildar has scheduled a Circle Rate Harmonization Hearing to prevent tribunal escalation.",
+    "date": "2026-08-20",
+    "time": "04:45 PM",
+    "refNo": "AI-DIS-2026-89",
+    "status": "Hearing Scheduled",
+    "actionText": "Confirm Attendance Online",
+    "severity": "tertiary",
+    "hearingDate": "Feb 12, 2026 • 11:30 AM",
+    "venue": "AC Office, Bangalore Rural"
+  },
+  {
+    "id": "notif-03",
+    "type": "PFMS Disbursement Sync",
+    "kannadaType": "ಪರಿಹಾರ ಖಾತೆ ಪರಿಶೀಲನೆ",
+    "title": "Direct Benefit Transfer (DBT) Escrow Linked",
+    "message": "Bank of Baroda A/C ••••4409 successfully linked to Aadhaar for zero-leakage automated compensation disbursal upon Section 23 award declaration.",
+    "date": "2026-08-05",
+    "time": "09:30 AM",
+    "refNo": "PFMS-GOK-44019",
+    "status": "Verified",
+    "actionText": "View PFMS Ledger",
+    "severity": "secondary"
+  }
+]

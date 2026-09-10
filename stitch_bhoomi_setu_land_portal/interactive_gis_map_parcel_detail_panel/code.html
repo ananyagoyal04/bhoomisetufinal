@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'primary-fixed': '#b2eee7', 'on-primary-fixed-variant': '#0c4f4a', 'on-secondary-fixed': '#00201a', 'primary-fixed-dim': '#96d2cb', 'primary-container': '#0b4f4a', 'on-primary-container': '#84bfb8', 'on-primary-fixed': '#00201d', 'on-surface-variant': '#3f4947', 'surface-container-high': '#eae7e7', 'on-secondary-fixed-variant': '#005144', 'background': '#fcf9f8', 'on-surface': '#1b1b1b', 'on-primary': '#ffffff', 'on-error': '#ffffff', 'surface-container-highest': '#e5e2e1', 'inverse-on-surface': '#f3f0ef', 'surface-container': '#f0eded', 'surface-bright': '#fcf9f8', 'surface-tint': '#2c6862', 'inverse-surface': '#313030', 'outline': '#707977', 'surface-dim': '#dcd9d9', 'inverse-primary': '#96d2cb', 'secondary-container': '#a2f2de', 'tertiary-container': '#5a4200', 'error': '#ba1a1a', 'on-tertiary-fixed': '#251a00', 'tertiary': '#3f2d00', 'surface-container-low': '#f6f3f2', 'surface-container-lowest': '#ffffff', 'on-secondary-container': '#197161', 'surface': '#fcf9f8', 'on-background': '#1b1b1b', 'on-tertiary': '#ffffff', 'secondary': '#0e6a5b', 'on-tertiary-container': '#e3ab00', 'error-container': '#ffdad6', 'primary': '#003733', 'secondary-fixed': '#a2f2de', 'tertiary-fixed-dim': '#f9bd14', 'on-secondary': '#ffffff', 'on-error-container': '#93000a', 'outline-variant': '#bfc8c6', 'surface-variant': '#e5e2e1', 'tertiary-fixed': '#ffdf9d', 'secondary-fixed-dim': '#86d5c3', 'on-tertiary-fixed-variant': '#5b4300' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-sm': '0.75rem', 'gutter-desktop': '1.5rem', 'space-xxs': '0.25rem', 'space-xl': '2rem', 'space-2xl': '3rem', 'margin-mobile': '1rem', 'space-3xl': '4rem', 'space-xs': '0.5rem', 'margin-tablet': '2rem', 'container-max': '88rem', 'margin-desktop': '3rem', 'space-lg': '1.5rem', 'space-md': '1rem', 'gutter-mobile': '1rem' }, fontFamily: { 'body-md': ['Inter'], 'body-sm': ['Inter'], 'headline-lg-mobile': ['Noto Serif'], 'headline-md': ['Noto Serif'], 'headline-sm': ['Noto Serif'], 'subheading': ['Inter'], 'display-hero-mobile': ['Noto Serif'], 'headline-lg': ['Noto Serif'], 'caption': ['Inter'], 'label-bilingual-kannada': ['Noto Sans'], 'display-hero': ['Noto Serif'], 'label-action': ['Inter'], 'body-lg': ['Inter'] }, fontSize: { 'body-md': ['14px', { lineHeight: '22px', fontWeight: '400' }], 'body-sm': ['13px', { lineHeight: '18px', fontWeight: '400' }], 'headline-lg-mobile': ['24px', { lineHeight: '32px', fontWeight: '600' }], 'headline-md': ['22px', { lineHeight: '28px', fontWeight: '600' }], 'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }], 'subheading': ['16px', { lineHeight: '24px', letterSpacing: '0.01em', fontWeight: '600' }], 'display-hero-mobile': ['28px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '700' }], 'headline-lg': ['30px', { lineHeight: '38px', letterSpacing: '-0.015em', fontWeight: '600' }], 'caption': ['11px', { lineHeight: '16px', letterSpacing: '0.04em', fontWeight: '500' }], 'label-bilingual-kannada': ['12px', { lineHeight: '18px', fontWeight: '500' }], 'display-hero': ['40px', { lineHeight: '48px', letterSpacing: '-0.02em', fontWeight: '700' }], 'label-action': ['14px', { lineHeight: '20px', letterSpacing: '0.01em', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '26px', fontWeight: '400' }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="p-space-lg flex items-center gap-space-sm bg-primary text-on-primary"><img alt="Bhoomi Setu Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKg2n5Nt8ftef2zj3MXI1_aYijdeKSyyGMSL-m-aq2ez_FK1vyBb_nD7r_8v0vUq_ewLfGSa2NDdpTspzjT4r7sTnvCqnZQJW_bMOmzuHwjska6a3eHGTxwFJltuql1JUnZw1avrTHDSfZ9zRagnGEeHPitj5dmEofhx9Hmi9uMj8bT1pR2QRnXJGeW3PEF87V0Csjj6WFXHiJWItbuiingGlUbgNXkYhTdjF_gATlP8WkSWNsQIAN"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary font-bold">ಭೂಮಿ ಸೇತು</span><span class="font-caption text-caption text-on-primary-container tracking-wider uppercase font-semibold">Spatial Operations</span></div></div><div class="px-space-md py-space-sm bg-surface-container-low"><div class="flex items-center justify-between text-caption font-caption text-on-surface-variant"><span class="font-medium">Portal Context</span><span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold">SIH 2026</span></div></div><nav class="flex-1 px-space-sm py-space-md space-y-space-xxs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-semibold"><div class="px-space-sm py-space-xxs text-caption font-caption uppercase tracking-wider text-on-surface-variant font-semibold">Acquisition Lifecycle</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="officer-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-action text-label-action">Officer Overview</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-primary-container text-on-primary font-semibold" data-path="interactive-map-and-spatial-gis" href="#"><span class="material-symbols-outlined text-[20px]">layers</span><span class="font-label-action text-label-action">Spatial GIS &amp; Map</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="senior-official-portal" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-action text-label-action">Senior Official Portal</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="citizen-portal" href="#"><span class="material-symbols-outlined text-[20px]">public</span><span class="font-label-action text-label-action">Citizen Portal</span></a><div class="pt-space-md px-space-sm py-space-xxs text-caption font-caption uppercase tracking-wider text-on-surface-variant font-semibold">Lifecycle Steps</div><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all text-body-sm font-body-sm" data-path="officer-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">search</span><span>Find &amp; Survey</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all text-body-sm font-body-sm" data-path="officer-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">visibility</span><span>Monitor Progress</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all text-body-sm font-body-sm" data-path="senior-official-portal" href="#"><span class="material-symbols-outlined text-[18px]">insights</span><span>Predict Bottlenecks</span></a><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all text-body-sm font-body-sm" data-path="officer-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">gshield</span><span>Prevent &amp; Act</span></a></nav><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant mb-space-xxs"><span class="font-medium">Kannada Mode</span><button class="px-space-xs py-space-xxs rounded bg-surface-container-highest text-caption font-caption font-semibold hover:bg-primary hover:text-on-primary transition-colors">ಕನ್ನಡ</button></div><div class="text-caption font-caption text-on-surface-variant">Revenue Dept, Govt. of Karnataka</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-sm"><span class="font-label-bilingual-kannada text-label-bilingual-kannada bg-surface-container px-space-xs py-1 rounded text-on-surface-variant">ಕರ್ನಾಟಕ ರಾಜ್ಯ ಭೂಸ್ವಾಧೀನ ವೇದಿಕೆ</span><div class="hidden xl:flex items-center gap-space-xs text-caption font-caption text-on-surface-variant font-medium"><span class="text-primary font-semibold">Find</span><span>→</span><span class="text-primary font-semibold">Monitor</span><span>→</span><span class="text-primary font-semibold">Predict</span><span>→</span><span class="text-primary font-semibold">Explain</span><span>→</span><span class="text-primary font-semibold">Prevent</span><span>→</span><span class="text-primary font-semibold">Act</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden sm:block"><span class="material-symbols-outlined absolute left-2.5 top-2 text-[18px] text-on-surface-variant">search</span><input class="pl-8 pr-3 py-1.5 rounded-lg bg-surface-container text-body-sm font-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary w-64" placeholder="Search Survey No. / Khasra..." type="text"/></div><button aria-label="Notifications" class="p-space-xs rounded-lg hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-background w-full px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<section class="relative w-full h-[calc(100vh-5.5rem)] rounded-2xl overflow-hidden shadow-xl bg-surface-container-highest">
+<!-- Top Floating Toolbar / HUD Control Bar -->
+<div class="absolute top-4 left-4 right-4 z-20 flex flex-wrap items-center justify-between gap-3 pointer-events-none">
+<!-- District Quick Filter & Search -->
+<div class="pointer-events-auto flex items-center gap-2 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-2 rounded-xl shadow-md">
+<div class="flex items-center gap-2 pr-3">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-subheading text-subheading text-on-surface">Bengaluru Sub-Division GIS</span>
+<span class="font-label-bilingual-kannada text-label-bilingual-kannada text-on-surface-variant">ಕಂದಾಯ ಇಲಾಖೆ</span>
+</div>
+<div class="flex items-center gap-1.5 pl-3">
+<button class="px-2.5 py-1 rounded-lg bg-primary text-on-primary font-caption text-caption transition-all shadow-sm" id="btn-dist-all">All Districts</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-caption text-caption transition-all">Bengaluru Urban</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-caption text-caption transition-all">Bengaluru Rural</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-caption text-caption transition-all">Ramanagara</button>
+</div>
+</div>
+<!-- Risk Status Filters -->
+<div class="pointer-events-auto flex items-center gap-1.5 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-2 rounded-xl shadow-md">
+<span class="font-caption text-caption text-on-surface-variant mr-1 uppercase tracking-wider font-semibold">Triage Filter:</span>
+<button class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary-container font-label-action text-body-sm shadow-sm transition-all flex items-center gap-1.5" id="pill-all">
+<span>All Parcels</span>
+<span class="px-1.5 py-0.2 bg-primary text-on-primary text-caption rounded-full font-bold">142</span>
+</button>
+<button class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-action text-body-sm transition-all hover:shadow-sm flex items-center gap-1.5" id="pill-high">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>High Risk</span>
+<span class="font-bold">29</span>
+</button>
+<button class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-action text-body-sm transition-all hover:shadow-sm flex items-center gap-1.5" id="pill-med">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Medium Risk</span>
+<span class="font-bold">54</span>
+</button>
+<button class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-action text-body-sm transition-all hover:shadow-sm flex items-center gap-1.5" id="pill-low">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Low Risk</span>
+<span class="font-bold">59</span>
+</button>
+</div>
+</div>
+<!-- GIS Map Viewport Canvas with Static Geo Location pipeline -->
+<div class="relative w-full h-full select-none overflow-hidden">
+<!-- Fallback GIS Photogrammetry Canvas -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" data-location="Devanahalli, Bengaluru Rural, Karnataka, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8VQHB2y4L3l-b4Qd8XwlsS3viZAFGvI-DGnLO6LIRaolGctxmBGBLLQv1U-_EPKbVtRdSvuMnDPJspe8ExtoKgIsQChVuYEL1ZFQpEwW1B6FJyreOOI1VgH9PCl_UhVoYf-OKgMAg9OlP-k9LCs3xf0goWeG0oDbbWY5e6wAoIMvGa0ni0K8VcwYtTP4wdA_Qzw7dPpn3vLPejpFoGGb-3VFrhw2O7KH6Oo60t6_i5qgRNN-H0w')"></div>
+<!-- High-tech Vector Cadastral Grid and Parcel Overlay -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="70" id="gis-grid" patternunits="userSpaceOnUse" width="70">
+<path d="M 70 0 L 0 0 0 70" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"></path>
+</pattern>
+<lineargradient id="crimson-grad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#ba1a1a" stop-opacity="0.55"></stop>
+<stop offset="100%" stop-color="#93000a" stop-opacity="0.75"></stop>
+</lineargradient>
+<lineargradient id="amber-grad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#f9bd14" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#5a4200" stop-opacity="0.65"></stop>
+</lineargradient>
+<lineargradient id="green-grad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#86d5c3" stop-opacity="0.4"></stop>
+<stop offset="100%" stop-color="#0e6a5b" stop-opacity="0.6"></stop>
+</lineargradient>
+<filter height="140%" id="glow-crimson" width="140%" x="-20%" y="-20%">
+<fegaussianblur result="blur" stddeviation="6"></fegaussianblur>
+<fecomposite in="SourceGraphic" in2="blur" operator="over"></fecomposite>
+</filter>
+</defs>
+<rect fill="url(#gis-grid)" height="100%" width="100%"></rect>
+<!-- Peripheral Ring Road Corridor Path Trace (PRR Phase 2) -->
+<path d="M 40 480 C 220 420, 380 340, 520 280 S 760 190, 940 140" fill="none" opacity="0.85" stroke="#f9bd14" stroke-dasharray="8 6" stroke-width="5"></path>
+<!-- Parcel Polygon 1: Sy. No. 142/2A - Devanahalli (CRIMSON) -->
+<polygon class="pointer-events-auto cursor-pointer transition-all hover:opacity-95" fill="url(#crimson-grad)" filter="url(#glow-crimson)" id="polygon-142" points="490,260 590,230 630,310 560,360 480,320" stroke="#ba1a1a" stroke-width="2.5"></polygon>
+<text fill="#ffffff" font-family="Inter" font-size="11" font-weight="700" letter-spacing="0.5" text-anchor="middle" x="545" y="295">Sy 142/2A</text>
+<text fill="#ffdad6" font-family="Inter" font-size="9" text-anchor="middle" x="545" y="310">3A 18G</text>
+<!-- Parcel Polygon 2: Sy. No. 89/1B - Bidadi, Ramanagara (AMBER) -->
+<polygon class="pointer-events-auto cursor-pointer hover:opacity-95 transition-all" fill="url(#amber-grad)" id="polygon-89" points="260,510 350,475 385,550 310,590 240,555" stroke="#f9bd14" stroke-width="2"></polygon>
+<text fill="#ffffff" font-family="Inter" font-size="11" font-weight="700" text-anchor="middle" x="310" y="535">Sy 89/1B</text>
+<text fill="#ffdf9d" font-family="Inter" font-size="9" text-anchor="middle" x="310" y="550">Bidadi Hub</text>
+<!-- Parcel Polygon 3: Sy. No. 34/4 - Yelahanka Sector (GREEN) -->
+<polygon class="pointer-events-auto cursor-pointer hover:opacity-90" fill="url(#green-grad)" points="410,180 480,160 505,215 440,240" stroke="#86d5c3" stroke-width="1.8"></polygon>
+<text fill="#ffffff" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="460" y="202">Sy 34/4</text>
+<!-- Parcel Polygon 4: Sy. No. 201/1 - Whitefield Zone (GREEN) -->
+<polygon class="pointer-events-auto cursor-pointer hover:opacity-90" fill="url(#green-grad)" points="690,360 770,335 810,410 740,440 680,405" stroke="#86d5c3" stroke-width="1.8"></polygon>
+<text fill="#ffffff" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="745" y="385">Sy 201/1</text>
+</svg>
+<!-- Pin Marker 1: Devanahalli (High Risk - Selected) -->
+<div class="absolute left-[540px] top-[260px] -translate-x-1/2 -translate-y-full cursor-pointer z-10 group" id="pin-devanahalli" onclick="toggleParcelPanel(true)">
+<div class="relative flex flex-col items-center">
+<div class="px-2.5 py-1 rounded-md bg-error text-on-error font-caption text-caption font-bold shadow-lg flex items-center gap-1.5 animate-bounce">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span>Sy 142/2A (84)</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-error flex items-center justify-center text-on-error shadow-xl ring-4 ring-error/20">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+<div class="w-2 h-3 bg-error -mt-1 [clip-path:polygon(0_0,100%_0,50%_100%)]"></div>
+</div>
+</div>
+<!-- Pin Marker 2: Bidadi, Ramanagara (Medium Risk) -->
+<div class="absolute left-[310px] top-[515px] -translate-x-1/2 -translate-y-full cursor-pointer z-10 group" onclick="selectParcel('Bidadi Sy 89/1B', '62/100', 'Medium Risk', 'Bidadi Industrial Corridor Ph-1', 'Ramanagara, Bidadi', '5 Acres 12 Guntas', 'Section 11 (Preliminary Notification)')">
+<div class="relative flex flex-col items-center">
+<div class="px-2 py-0.5 rounded-md bg-tertiary-container text-on-tertiary-container font-caption text-caption font-semibold shadow-md mb-1 hidden group-hover:flex items-center gap-1">
+<span>Sy 89/1B Bidadi</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed-dim flex items-center justify-center text-on-tertiary-fixed shadow-md">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+</div>
+<div class="w-1.5 h-2 bg-tertiary-fixed-dim -mt-1 [clip-path:polygon(0_0,100%_0,50%_100%)]"></div>
+</div>
+</div>
+<!-- Pin Marker 3: Whitefield (Low Risk) -->
+<div class="absolute left-[745px] top-[365px] -translate-x-1/2 -translate-y-full cursor-pointer z-10 group" onclick="selectParcel('Whitefield Sy 201/1', '18/100', 'Low Risk', 'Metro Rail Extension Line', 'Bengaluru Urban, KR Puram', '1 Acre 04 Guntas', 'Section 28 (Award Determination)')">
+<div class="relative flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-md">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+</div>
+<div class="w-1.5 h-2 bg-secondary -mt-1 [clip-path:polygon(0_0,100%_0,50%_100%)]"></div>
+</div>
+</div>
+<!-- Pin Marker 4: Yelahanka (Low Risk) -->
+<div class="absolute left-[460px] top-[185px] -translate-x-1/2 -translate-y-full cursor-pointer z-10 group" onclick="selectParcel('Yelahanka Sy 34/4', '22/100', 'Low Risk', 'Aerospace Tech Park Link', 'Bengaluru Urban, Yelahanka', '2 Acres 22 Guntas', 'Section 19 (Declaration of Acquisition)')">
+<div class="relative flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-md">
+<span class="material-symbols-outlined text-[15px]">check</span>
+</div>
+<div class="w-1.5 h-2 bg-secondary -mt-1 [clip-path:polygon(0_0,100%_0,50%_100%)]"></div>
+</div>
+</div>
+<!-- Map Overlaid Geo Coordinates & HUD Telemetry -->
+<div class="absolute bottom-4 left-4 z-20 flex items-center gap-3 pointer-events-none">
+<div class="pointer-events-auto bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-md flex items-center gap-3 font-caption text-caption text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">my_location</span>
+<span class="font-medium font-body-sm">13.2435° N, 77.7126° E</span>
+</div>
+<div class="h-3 w-px bg-outline-variant"></div>
+<span class="text-on-surface">Zoom Level: 14.5x Cadastral</span>
+<div class="h-3 w-px bg-outline-variant"></div>
+<span class="text-secondary font-semibold">Datum: WGS 84 / UTM 43N</span>
+</div>
+</div>
+<!-- Bottom Floating GIS Map Controls / Layer Manager -->
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 pointer-events-none">
+<div class="pointer-events-auto bg-surface-container-lowest/95 backdrop-blur-md p-1.5 rounded-2xl shadow-xl flex items-center gap-1">
+<button class="px-3 py-1.5 rounded-xl bg-primary text-on-primary font-label-action text-body-sm flex items-center gap-1.5 transition-all" id="layer-hybrid">
+<span class="material-symbols-outlined text-[18px]">satellite_alt</span>
+<span>Satellite Hybrid</span>
+</button>
+<button class="px-3 py-1.5 rounded-xl text-on-surface-variant hover:bg-surface-container font-label-action text-body-sm flex items-center gap-1.5 transition-all" id="layer-cadastral">
+<span class="material-symbols-outlined text-[18px]">crop_square</span>
+<span>Cadastral Boundary</span>
+</button>
+<button class="px-3 py-1.5 rounded-xl text-on-surface-variant hover:bg-surface-container font-label-action text-body-sm flex items-center gap-1.5 transition-all" id="layer-risk">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+<span>Risk Heatmap</span>
+</button>
+<button class="px-3 py-1.5 rounded-xl text-on-surface-variant hover:bg-surface-container font-label-action text-body-sm flex items-center gap-1.5 transition-all" id="layer-disaster">
+<span class="material-symbols-outlined text-[18px]">flood</span>
+<span>Flood Vulnerability</span>
+</button>
+</div>
+</div>
+<!-- Right Zoom & Measurement GIS Widget -->
+<div class="absolute right-6 top-20 z-20 flex flex-col gap-1.5 bg-surface-container-lowest/95 backdrop-blur-md p-1.5 rounded-xl shadow-lg">
+<button aria-label="Zoom in" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+<button aria-label="Zoom out" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<div class="w-full h-px bg-surface-container"></div>
+<button aria-label="Polygon measurement" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">square_foot</span>
+</button>
+<button aria-label="Compass reset" class="w-8 h-8 rounded-lg flex items-center justify-center text-secondary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+</button>
+</div>
+</div>
+<!-- DOCKED SLIDE-OUT PARCEL DETAIL DOSSIER PANEL (Width 430px) -->
+<aside class="absolute top-0 right-0 bottom-0 w-[430px] max-w-full bg-surface-container-lowest shadow-2xl z-30 flex flex-col transform transition-transform duration-300 ease-in-out translate-x-0 overflow-hidden" id="parcel-panel">
+<!-- Panel Header with Dismiss & Crest Details -->
+<div class="p-space-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">account_balance</span>
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-bold">State Cadastral Registry</span>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Close panel" class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="toggleParcelPanel(false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<div>
+<span class="font-label-bilingual-kannada text-label-bilingual-kannada text-secondary font-medium" id="panel-kannada-sub">ಸರ್ವೆ ನಂ: ೧೪೨/೨ಎ | ದೇವನಹಳ್ಳಿ ತಾಲೂಕು</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold" id="panel-title">Parcel Dossier: Sy. No. 142/2A | Devanahalli</h2>
+</div>
+<!-- High Delay Risk Status Badge -->
+<div class="mt-1 flex items-center justify-between">
+<div class="px-3 py-1 rounded-full bg-error-container text-on-error-container flex items-center gap-2" id="panel-risk-badge">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-action text-caption font-bold" id="panel-risk-text">High Delay Risk (Score: 84/100)</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Updated: 2 hrs ago</span>
+</div>
+</div>
+<!-- Scrollable Parcel Details Body -->
+<div class="flex-1 p-space-lg overflow-y-auto space-y-space-md">
+<!-- Acquisition Project Assignment -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-1">
+<div class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-semibold">Acquisition Purpose / Project</div>
+<div class="font-subheading text-subheading text-primary font-bold" id="panel-project">Peripheral Ring Road Phase-2 (Section KM 18-24)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Executing Body: Bangalore Development Authority (BDA)</div>
+</div>
+<!-- Metric Grid -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-sm bg-surface-container rounded-xl">
+<span class="font-caption text-caption text-on-surface-variant block">District &amp; Taluk</span>
+<span class="font-label-action text-body-sm text-on-surface font-semibold" id="panel-jurisdiction">Bengaluru Rural, Devanahalli</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-xl">
+<span class="font-caption text-caption text-on-surface-variant block">Cadastral Extent</span>
+<span class="font-label-action text-body-sm text-on-surface font-semibold" id="panel-extent">3 Acres 18 Guntas (Dry Ag)</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-xl col-span-2">
+<span class="font-caption text-caption text-on-surface-variant block">Current Statutory Lifecycle Stage</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-action text-body-sm text-on-surface font-semibold" id="panel-stage">Section 19 (Declaration of Acquisition)</span>
+</div>
+</div>
+</div>
+<!-- Ownership & Title Disputes -->
+<div class="p-space-md bg-surface-container-low rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-semibold">Ownership Verification</span>
+<span class="px-2 py-0.5 rounded text-caption font-caption bg-tertiary-fixed text-on-tertiary-fixed font-semibold">Title Conflict</span>
+</div>
+<div class="font-body-md text-body-md text-on-surface">
+<span class="font-semibold text-primary">Landowner of Record:</span> K. Ramamurthy &amp; 3 Co-sharers
+          </div>
+<div class="text-body-sm font-body-sm text-on-surface-variant flex items-start gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">gavel</span>
+<span>Ownership Status: Joint Khata (Disputed Circle Valuation filed in High Court WP-4821/2025).</span>
+</div>
+</div>
+<!-- Circle Rate vs Market Demand Spread Matrix -->
+<div class="p-space-md bg-surface-container rounded-xl space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase tracking-wider text-on-surface-variant font-semibold">Valuation Differential (Spread)</span>
+<span class="text-caption font-caption text-error font-bold">+93.1% Gap</span>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Govt Circle Rate (Guidance):</span>
+<span class="font-semibold text-on-surface">₹1.45 Cr / Acre</span>
+</div>
+<div class="flex justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Claimant Market Demand:</span>
+<span class="font-bold text-error">₹2.80 Cr / Acre</span>
+</div>
+<!-- Spread Bar visualization -->
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="bg-primary h-full w-1/2" title="Circle Rate Share"></div>
+<div class="bg-error h-full w-1/2" title="Demanded Gap"></div>
+</div>
+<div class="flex justify-between text-caption font-caption text-on-surface-variant">
+<span>Guidance Anchor</span>
+<span>Disputed Variance: ₹1.35 Cr/A</span>
+</div>
+</div>
+</div>
+<!-- AI Delay Probability Indicators -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption uppercase tracking-wider text-primary font-bold">Predictive Risk Vector Breakdown</span>
+<span class="font-caption text-caption text-on-surface-variant">Model: LightGBM v4</span>
+</div>
+<div class="space-y-1.5 text-body-sm font-body-sm">
+<div>
+<div class="flex justify-between text-caption font-caption mb-0.5">
+<span class="text-on-surface-variant">Litigation Likelihood</span>
+<span class="font-semibold text-error">91% (High)</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full w-[91%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-caption font-caption mb-0.5">
+<span class="text-on-surface-variant">Gram Panchayat Consent Friction</span>
+<span class="font-semibold text-tertiary-fixed-dim">74% (Medium)</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full w-[74%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-caption font-caption mb-0.5">
+<span class="text-on-surface-variant">Disbursement Bottleneck Risk</span>
+<span class="font-semibold text-secondary">32% (Low)</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[32%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Panel Buttons Footer -->
+<div class="p-space-md bg-surface-container-low flex flex-col gap-2">
+<button class="w-full py-2.5 px-4 rounded-xl bg-primary text-on-primary font-label-action text-label-action hover:bg-secondary transition-all flex items-center justify-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Deep ML Delay Prediction &amp; SHAP Analysis →</span>
+</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-3 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high font-label-action text-body-sm flex items-center justify-center gap-1.5 transition-all shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">schema</span>
+<span>Approval Track</span>
+</button>
+<button class="py-2 px-3 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high font-label-action text-body-sm flex items-center justify-center gap-1.5 transition-all shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">picture_as_pdf</span>
+<span>Cadastral PDF</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Map Floating Collapsed Toggle Button when Panel is Hidden -->
+<button class="hidden absolute top-20 right-6 z-20 px-3.5 py-2 rounded-xl bg-surface-container-lowest/95 backdrop-blur-md text-on-surface font-label-action text-body-sm shadow-lg flex items-center gap-2 hover:bg-surface-container transition-all" id="btn-reopen-panel" onclick="toggleParcelPanel(true)">
+<span class="material-symbols-outlined text-primary text-[20px]">dock_to_left</span>
+<span>Inspect Sy. 142/2A</span>
+</button>
+</section>
+<!-- Interactive JavaScript handling Parcel Toggling and Filter Visuals -->
+<script>
+    function toggleParcelPanel(show) {
+      const panel = document.getElementById('parcel-panel');
+      const reopenBtn = document.getElementById('btn-reopen-panel');
+      if (show) {
+        panel.classList.remove('translate-x-full');
+        reopenBtn.classList.add('hidden');
+      } else {
+        panel.classList.add('translate-x-full');
+        reopenBtn.classList.remove('hidden');
+      }
+    }
+
+    function selectParcel(title, score, riskLevel, project, jur, extent, stage) {
+      document.getElementById('panel-title').innerText = 'Parcel Dossier: ' + title;
+      document.getElementById('panel-project').innerText = project;
+      document.getElementById('panel-jurisdiction').innerText = jur;
+      document.getElementById('panel-extent').innerText = extent;
+      document.getElementById('panel-stage').innerText = stage;
+      
+      const badge = document.getElementById('panel-risk-badge');
+      const riskText = document.getElementById('panel-risk-text');
+      
+      if (riskLevel.includes('High')) {
+        badge.className = 'px-3 py-1 rounded-full bg-error-container text-on-error-container flex items-center gap-2';
+        riskText.innerText = 'High Delay Risk (Score: ' + score + ')';
+      } else if (riskLevel.includes('Medium')) {
+        badge.className = 'px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center gap-2';
+        riskText.innerText = 'Medium Delay Risk (Score: ' + score + ')';
+      } else {
+        badge.className = 'px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center gap-2';
+        riskText.innerText = 'Low Delay Risk (Score: ' + score + ')';
+      }
+      toggleParcelPanel(true);
+    }
+
+    // Toggle layer buttons visual state
+    ['layer-hybrid', 'layer-cadastral', 'layer-risk', 'layer-disaster'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) {
+        btn.addEventListener('click', () => {
+          btn.classList.toggle('bg-primary');
+          btn.classList.toggle('text-on-primary');
+          btn.classList.toggle('text-on-surface-variant');
+        });
+      }
+    });
+  </script>
+</div></main></div></body></html>
