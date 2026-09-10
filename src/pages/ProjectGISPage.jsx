@@ -55,7 +55,7 @@ export default function ProjectGISPage() {
               <div className="flex items-center gap-space-xs">
                 <span className="material-symbols-outlined text-primary text-[20px]">layers</span>
                 <span className="font-subheading text-body-sm font-bold text-on-surface">
-                  {project ? project.name : 'Peripheral Ring Road Phase-2'}
+                  {project ? project.name : 'Road Expansion – North Bengaluru'}
                 </span>
                 <span className="text-outline-variant">•</span>
                 <span className="text-caption font-caption text-on-surface-variant text-xs">

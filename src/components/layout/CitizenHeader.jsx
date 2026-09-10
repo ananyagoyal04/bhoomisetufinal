@@ -1,9 +1,10 @@
 import React from 'react';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { useAuthRole } from '../../context/AuthRoleContext';
+import SystemStatusBadge from './SystemStatusBadge';
 
 export default function CitizenHeader() {
-  const { role, setRole, language, toggleLanguage } = useAuthRole();
+  const { role, setRole, language, toggleLanguage, setIsTechStackOpen } = useAuthRole();
   const navigate = useNavigate();
 
   const handleRoleSwitch = (newRole) => {
@@ -14,7 +15,7 @@ export default function CitizenHeader() {
   };
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-primary text-on-primary shadow-[0_1px_8px_rgba(0,0,0,0.06)]">
+    <header className="fixed top-0 w-full z-50 bg-primary text-on-primary shadow-[0_1px_8px_rgba(0,0,0,0.06)] transition-all">
       {/* Top Statutory Sub-bar */}
       <div className="bg-primary-container/60 px-margin-desktop py-space-xxs hidden lg:flex items-center justify-between text-caption font-caption text-on-primary-container border-b border-white/5">
         <div className="flex items-center gap-space-sm">
@@ -23,20 +24,20 @@ export default function CitizenHeader() {
           <span>Bhoomi Spatial Records Governance</span>
         </div>
         <div className="flex items-center gap-space-md">
-          <span className="bg-tertiary-fixed text-on-tertiary-fixed font-semibold px-space-xs py-0.5 rounded text-[11px]">
-            SIH 2026 • PS 26017
-          </span>
+          {/* System Status in Citizen Bar */}
+          <SystemStatusBadge compact={true} />
+
           <div className="flex items-center gap-space-xxs text-on-primary-fixed-variant">
             <button
               onClick={toggleLanguage}
-              className={`hover:text-on-primary font-medium transition-colors ${language === 'kn' ? 'text-on-primary font-bold underline' : 'text-on-primary-container'}`}
+              className={`hover:text-on-primary font-medium transition-colors cursor-pointer ${language === 'kn' ? 'text-on-primary font-bold underline' : 'text-on-primary-container'}`}
             >
               ಕನ್ನಡ
             </button>
             <span className="opacity-40">/</span>
             <button
               onClick={toggleLanguage}
-              className={`hover:text-on-primary font-medium transition-colors ${language === 'en' ? 'text-on-primary font-bold underline' : 'text-on-primary-container'}`}
+              className={`hover:text-on-primary font-medium transition-colors cursor-pointer ${language === 'en' ? 'text-on-primary font-bold underline' : 'text-on-primary-container'}`}
             >
               English
             </button>
@@ -46,8 +47,8 @@ export default function CitizenHeader() {
 
       {/* Main Navigation Bar */}
       <div className="h-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between gap-space-md">
-        <Link to="/" className="flex items-center gap-space-md">
-          <div className="w-10 h-10 rounded-xl bg-surface-container-lowest/20 flex items-center justify-center text-primary-fixed">
+        <Link to="/" className="flex items-center gap-space-md group">
+          <div className="w-10 h-10 rounded-xl bg-surface-container-lowest/20 flex items-center justify-center text-primary-fixed group-hover:scale-105 transition-transform">
             <span className="material-symbols-outlined text-[26px]">public</span>
           </div>
           <div className="flex flex-col">
@@ -67,13 +68,13 @@ export default function CitizenHeader() {
         </Link>
 
         {/* Citizen Navigation Items */}
-        <nav className="hidden md:flex items-center gap-space-xs p-space-xxs bg-primary-container/30 rounded-xl">
+        <nav className="hidden md:flex items-center gap-space-xs p-space-xxs bg-primary-container/30 rounded-2xl border border-white/10">
           <NavLink
             to="/citizen/my-land"
             className={({ isActive }) =>
-              `px-space-md py-space-xs text-label-action font-label-action rounded-lg transition-colors ${
+              `px-space-md py-space-xs text-label-action font-label-action rounded-xl transition-all ${
                 isActive
-                  ? 'bg-primary-container text-on-primary shadow-sm font-semibold'
+                  ? 'bg-primary-container text-on-primary shadow-sm font-bold scale-[1.02]'
                   : 'text-on-primary-container hover:bg-primary-container/50 hover:text-on-primary'
               }`
             }
@@ -83,9 +84,9 @@ export default function CitizenHeader() {
           <NavLink
             to="/citizen/search"
             className={({ isActive }) =>
-              `px-space-md py-space-xs text-label-action font-label-action rounded-lg transition-colors ${
+              `px-space-md py-space-xs text-label-action font-label-action rounded-xl transition-all ${
                 isActive
-                  ? 'bg-primary-container text-on-primary shadow-sm font-semibold'
+                  ? 'bg-primary-container text-on-primary shadow-sm font-bold scale-[1.02]'
                   : 'text-on-primary-container hover:bg-primary-container/50 hover:text-on-primary'
               }`
             }
@@ -95,9 +96,9 @@ export default function CitizenHeader() {
           <NavLink
             to="/citizen/applications"
             className={({ isActive }) =>
-              `px-space-md py-space-xs text-label-action font-label-action rounded-lg transition-colors ${
+              `px-space-md py-space-xs text-label-action font-label-action rounded-xl transition-all ${
                 isActive
-                  ? 'bg-primary-container text-on-primary shadow-sm font-semibold'
+                  ? 'bg-primary-container text-on-primary shadow-sm font-bold scale-[1.02]'
                   : 'text-on-primary-container hover:bg-primary-container/50 hover:text-on-primary'
               }`
             }
@@ -110,20 +111,21 @@ export default function CitizenHeader() {
         <div className="flex items-center gap-space-sm">
           <button
             onClick={() => handleRoleSwitch('officer')}
-            className="hidden sm:inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary text-caption font-caption font-semibold transition-colors"
+            className="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-on-primary text-caption font-caption font-semibold transition-all hover:scale-105 active:scale-95 cursor-pointer"
           >
             <span className="material-symbols-outlined text-[16px]">admin_panel_settings</span>
             <span>Officer View</span>
           </button>
 
           <button
-            aria-label="High Contrast Mode"
-            className="p-space-xs rounded-lg hover:bg-primary-container text-on-primary-container hover:text-on-primary transition-colors"
+            onClick={() => setIsTechStackOpen(true)}
+            className="p-space-xs rounded-lg hover:bg-primary-container text-on-primary-container hover:text-on-primary transition-colors cursor-pointer"
+            title="System Architecture"
           >
-            <span className="material-symbols-outlined text-[20px]">contrast</span>
+            <span className="material-symbols-outlined text-[20px]">account_tree</span>
           </button>
           
-          <div className="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs shadow-sm">
+          <div className="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs shadow-sm hover:opacity-90 transition-opacity cursor-pointer">
             KR
           </div>
         </div>
@@ -150,6 +152,8 @@ export default function CitizenHeader() {
 }
 
 export function CitizenFooter() {
+  const { setIsTechStackOpen } = useAuthRole();
+
   return (
     <footer className="w-full bg-surface-container-low text-on-surface-variant mt-space-3xl border-t border-surface-container-high/60">
       <div className="max-w-container-max mx-auto px-margin-desktop py-space-2xl grid grid-cols-1 md:grid-cols-4 gap-space-xl">
@@ -160,8 +164,17 @@ export function CitizenFooter() {
             </span>
           </div>
           <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-            Karnataka State Integrated Spatial Land Acquisition & Governance Information System. Developed for SIH 2026 initiative.
+            Karnataka State Integrated Spatial Land Acquisition & Governance Information System. Department of Revenue, Government of Karnataka.
           </p>
+          <div className="pt-2">
+            <button
+              onClick={() => setIsTechStackOpen(true)}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-on-primary text-xs font-bold hover:bg-secondary transition-all cursor-pointer shadow-sm"
+            >
+              <span className="material-symbols-outlined text-[16px]">account_tree</span>
+              <span>Engineering & Tech Stack</span>
+            </button>
+          </div>
         </div>
 
         <div>
@@ -197,13 +210,14 @@ export function CitizenFooter() {
           </p>
           <div className="inline-flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-semibold">
             <span className="w-2 h-2 rounded-full bg-secondary"></span>
-            <span>Secure State Gov Portal</span>
+            <span>Official Government Portal</span>
           </div>
         </div>
       </div>
 
-      <div className="bg-surface-container py-space-sm px-margin-desktop text-center font-caption text-caption text-on-surface-variant border-t border-surface-container-high/40">
-        © 2026 Revenue Department, Government of Karnataka. All Rights Reserved. Smart India Hackathon Prototype (PS 26017).
+      <div className="bg-surface-container py-space-sm px-margin-desktop text-center font-caption text-caption text-on-surface-variant border-t border-surface-container-high/40 flex flex-wrap items-center justify-between gap-2 max-w-container-max mx-auto">
+        <span>© 2026 Revenue Department, Government of Karnataka. All Rights Reserved.</span>
+        <SystemStatusBadge />
       </div>
     </footer>
   );

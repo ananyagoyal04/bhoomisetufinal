@@ -195,7 +195,7 @@ export default function SeniorDashboard() {
                         <div className="h-full bg-error flex items-center justify-center text-white font-bold" style={{ width: '16.7%' }}>1 High</div>
                       </div>
                       <div className="flex justify-between text-[11px] text-on-surface-variant">
-                        <span>PRR Phase-2, Dobbspet Ind. Exp</span>
+                        <span>Road Expansion – North Bengaluru, Dobbspet Ind. Exp</span>
                         <span className="font-bold text-error">Devanahalli Sy 142 Action Required</span>
                       </div>
                     </div>
@@ -469,10 +469,10 @@ export default function SeniorDashboard() {
                           Priority Corridor A-1
                         </span>
                         <h3 className="font-subheading text-subheading text-on-surface font-bold text-base">
-                          Peripheral Ring Road (PRR) Phase 2
+                          Road Expansion – North Bengaluru
                         </h3>
                         <p className="font-body-sm text-body-sm text-on-surface-variant text-xs">
-                          BDA / Karnataka Urban Infrastructure Development
+                          KRDCL / Karnataka Public Works & Urban Infrastructure
                         </p>
                       </div>
                       <span className="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-caption text-caption font-bold text-xs">

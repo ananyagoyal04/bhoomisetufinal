@@ -1,6 +1,6 @@
 """
 Bhoomi Setu — FastAPI Backend
-Karnataka Land Acquisition Management & Spatial Portal (SIH 2026 PS 26017)
+Karnataka Land Acquisition Management & Spatial Portal Mock Service
 """
 
 import json

@@ -1,9 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthRole } from '../context/AuthRoleContext';
+import SystemStatusBadge from '../components/layout/SystemStatusBadge';
 
 export default function LandingPage() {
-  const { setRole, language, toggleLanguage } = useAuthRole();
+  const { setRole, language, toggleLanguage, setIsTechStackOpen } = useAuthRole();
   const navigate = useNavigate();
 
   const handleRoleSelect = (roleKey, targetRoute) => {
@@ -25,15 +26,21 @@ export default function LandingPage() {
               </span>
             </div>
             <div className="flex items-center space-x-space-md">
-              <span className="bg-surface-container px-space-xs py-0.5 rounded text-on-surface font-bold tracking-wider text-[11px]">
-                SIH 2026 PROTOTYPE • PS 26017
-              </span>
+              <SystemStatusBadge />
+              <button
+                onClick={() => setIsTechStackOpen(true)}
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-primary font-semibold hover:bg-primary hover:text-white transition-all text-xs border border-surface-container-high"
+                title="View Bhoomi Setu Technical Architecture"
+              >
+                <span className="material-symbols-outlined text-[15px]">account_tree</span>
+                <span>Tech Stack</span>
+              </button>
               <span className="flex items-center gap-1 font-semibold text-primary">
                 <span className="material-symbols-outlined text-[14px]">gavel</span> KLA Act 2013 Compliant
               </span>
               <button
                 onClick={toggleLanguage}
-                className="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-bold hover:bg-primary hover:text-white transition-colors text-xs"
+                className="px-2.5 py-1 rounded bg-surface-container-highest text-primary font-bold hover:bg-primary hover:text-white transition-colors text-xs"
               >
                 {language === 'en' ? 'ಕನ್ನಡ' : 'English'}
               </button>
@@ -207,7 +214,7 @@ export default function LandingPage() {
               <div className="mt-space-sm pt-space-xs flex items-center justify-between text-caption font-caption text-secondary text-xs">
                 <span>BLR Urban / Rural / RMG</span>
                 <span className="px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded font-semibold text-[10px]">
-                  PILOT v1
+                  ACTIVE REGISTRY
                 </span>
               </div>
             </div>
@@ -445,8 +452,18 @@ export default function LandingPage() {
 
       </main>
 
-      <footer className="w-full max-w-7xl text-center py-4 text-xs text-on-surface-variant">
-        © 2026 Department of Revenue, Government of Karnataka • Smart India Hackathon PS 26017 Prototype
+      <footer className="w-full max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-2 py-4 text-xs text-on-surface-variant border-t border-surface-container">
+        <span>© 2026 Department of Revenue, Government of Karnataka • Bhoomi Setu Spatial Portal</span>
+        <div className="flex items-center gap-3">
+          <button 
+            onClick={() => setIsTechStackOpen(true)}
+            className="hover:text-primary underline font-medium"
+          >
+            System Architecture & Roadmap
+          </button>
+          <span>•</span>
+          <span>KLA Act 2013 Statutory Engine</span>
+        </div>
       </footer>
     </div>
   );

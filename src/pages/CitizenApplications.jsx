@@ -224,7 +224,7 @@ export default function CitizenApplications() {
                   <div>
                     <h3 className="font-subheading text-on-surface font-bold text-base">Notice under Section 19(1) Published</h3>
                     <p className="text-body-md text-on-surface-variant mt-1 text-xs leading-relaxed">
-                      Gazette notification issued for Devanahalli PRR Phase-2. Your parcel <span className="font-bold text-primary">Sy. No. 142/2A</span> has been awarded preliminary base rate of <span className="font-semibold text-on-surface">₹1.45 Cr/Acre</span> with solatium. Please upload Form 14 bank details.
+                      Gazette notification issued for Road Expansion – North Bengaluru (Devanahalli). Your parcel <span className="font-bold text-primary">Sy. No. 142/2A</span> has been awarded preliminary base rate of <span className="font-semibold text-on-surface">₹1.45 Cr/Acre</span> with solatium. Please upload Form 14 bank details.
                     </p>
                   </div>
 

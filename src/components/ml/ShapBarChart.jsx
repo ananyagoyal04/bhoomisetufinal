@@ -37,33 +37,43 @@ export default function ShapBarChart({
             const icon = idx === 0 ? 'trending_up' : idx === 1 ? 'assignment_late' : idx === 2 ? 'balance' : 'folder_off';
 
             return (
-              <div key={driver.factor} className="group">
-                <div className="flex items-center justify-between font-body-sm text-body-sm mb-1">
-                  <span className="font-medium text-on-surface flex items-center gap-1.5">
-                    <span className={`material-symbols-outlined text-[16px] ${isCritical ? 'text-error' : 'text-amber-600'}`}>
+              <div 
+                key={driver.factor} 
+                className="group relative p-2 rounded-xl transition-all duration-200 hover:bg-surface-container-low/80 hover:shadow-sm border border-transparent hover:border-surface-container cursor-pointer"
+                title={`${driver.factor}: +${driver.contribution}% delay impact (+${driver.days || Math.round(driver.contribution * 1.1)} days)`}
+              >
+                <div className="flex items-center justify-between font-body-sm text-body-sm mb-1.5">
+                  <span className="font-medium text-on-surface flex items-center gap-1.5 group-hover:text-primary transition-colors">
+                    <span className={`material-symbols-outlined text-[18px] transition-transform group-hover:scale-110 ${isCritical ? 'text-error' : 'text-amber-600'}`}>
                       {icon}
                     </span>
-                    <span>{driver.factor}</span>
+                    <span className="font-semibold">{driver.factor}</span>
                   </span>
-                  <span className={`font-bold font-mono text-xs ${isCritical ? 'text-error' : 'text-amber-700'}`}>
-                    +{driver.contribution}% Delay Impact (+{driver.days || Math.round(driver.contribution * 1.1)} Days)
+                  <span className={`font-bold font-mono text-xs px-2 py-0.5 rounded-full transition-all duration-200 ${
+                    isCritical 
+                      ? 'text-error bg-error-container/20 group-hover:bg-error group-hover:text-white' 
+                      : 'text-amber-700 bg-amber-100/60 group-hover:bg-amber-600 group-hover:text-white'
+                  }`}>
+                    +{driver.contribution}% Impact (+{driver.days || Math.round(driver.contribution * 1.1)} Days)
                   </span>
                 </div>
 
-                <div className="w-full bg-surface-container-high rounded-full h-3 overflow-hidden flex">
+                <div className="w-full bg-surface-container-high rounded-full h-3.5 overflow-hidden flex p-0.5">
                   <div
-                    className={`h-full rounded-full transition-all duration-1000 ease-out ${
+                    className={`h-full rounded-full transition-all duration-700 ease-out group-hover:brightness-110 shadow-sm ${
                       isCritical
-                        ? 'bg-error'
+                        ? 'bg-gradient-to-r from-red-600 to-rose-500'
                         : 'bg-gradient-to-r from-amber-500 to-amber-600'
                     }`}
                     style={{ width: barWidth }}
                   ></div>
                 </div>
 
-                <div className="flex justify-between text-caption font-caption text-on-surface-variant mt-1 text-[11px]">
-                  <span className="truncate pr-2">{driver.detail}</span>
-                  <span className="font-mono shrink-0 font-semibold text-primary">SHAP: {driver.shapValue}</span>
+                <div className="flex justify-between items-center text-caption font-caption text-on-surface-variant mt-1.5 text-[11px]">
+                  <span className="truncate pr-2 group-hover:text-on-surface transition-colors">{driver.detail}</span>
+                  <span className="font-mono shrink-0 font-semibold text-primary bg-primary/5 px-1.5 py-0.5 rounded border border-primary/10">
+                    SHAP: {driver.shapValue}
+                  </span>
                 </div>
               </div>
             );

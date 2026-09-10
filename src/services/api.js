@@ -9,13 +9,35 @@ import {
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
+// Subscribers for API status changes ('connecting' | 'live' | 'cached')
+let currentApiStatus = 'connecting';
+const statusListeners = new Set();
+
+function setApiStatus(status) {
+  if (currentApiStatus !== status) {
+    currentApiStatus = status;
+    statusListeners.forEach(listener => listener(status));
+  }
+}
+
+export function subscribeApiStatus(listener) {
+  statusListeners.add(listener);
+  listener(currentApiStatus);
+  return () => statusListeners.delete(listener);
+}
+
+export function getApiStatus() {
+  return currentApiStatus;
+}
+
 /**
- * Fetch helper with graceful fallback to local bundled mock data
+ * Fetch helper with transparent status indication and graceful offline fallback
  */
 async function fetchWithFallback(endpoint, fallbackData) {
+  setApiStatus('connecting');
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 1200); // quick 1.2s timeout
+    const timeoutId = setTimeout(() => controller.abort(), 1200); // 1.2s timeout
     const response = await fetch(`${API_BASE_URL}${endpoint}`, {
       signal: controller.signal,
       headers: {
@@ -24,14 +46,18 @@ async function fetchWithFallback(endpoint, fallbackData) {
     });
     clearTimeout(timeoutId);
     if (response.ok) {
+      setApiStatus('live');
       return await response.json();
     }
   } catch (error) {
-    // Graceful fallback on network failure or server absence
-    console.debug(`API endpoint ${endpoint} unavailable, using offline mock data.`, error.message);
+    // Graceful fallback to bundled JSON
   }
+  setApiStatus('cached');
   return fallbackData;
 }
+
+// Initial health check ping
+fetchWithFallback('/projects', projectsData).catch(() => {});
 
 export const apiService = {
   // Fetch all projects

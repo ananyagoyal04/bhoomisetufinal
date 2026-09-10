@@ -70,7 +70,7 @@ export default function MLDelayRiskPage() {
                   <span className="material-symbols-outlined text-[18px] text-secondary">location_on</span>
                   <span className="font-bold text-on-surface">Sy. No. {delayData.surveyNo || '142/2A'}</span>
                   <span className="text-outline-variant">•</span>
-                  <span>Peripheral Ring Road (PRR Phase-2, Devanahalli)</span>
+                  <span>Road Expansion – North Bengaluru (Devanahalli)</span>
                   <span className="text-outline-variant">•</span>
                   <span className="font-mono text-caption text-on-surface-variant">UID: KA-BLR-DEV-2026-08941</span>
                 </div>

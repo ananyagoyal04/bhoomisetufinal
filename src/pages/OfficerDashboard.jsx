@@ -420,7 +420,7 @@ export default function OfficerDashboard() {
                     <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8VQHB2y4L3l-b4Qd8XwlsS3viZAFGvI-DGnLO6LIRaolGctxmBGBLLQv1U-_EPKbVtRdSvuMnDPJspe8ExtoKgIsQChVuYEL1ZFQpEwW1B6FJyreOOI1VgH9PCl_UhVoYf-OKgMAg9OlP-k9LCs3xf0goWeG0oDbbWY5e6wAoIMvGa0ni0K8VcwYtTP4wdA_Qzw7dPpn3vLPejpFoGGb-3VFrhw2O7KH6Oo60t6_i5qgRNN-H0w')" }}>
                       <div className="absolute inset-0 bg-primary/20 backdrop-blur-[0.5px]"></div>
                       <div className="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur px-2.5 py-1 rounded-lg text-xs font-bold text-primary shadow">
-                        PRR Phase-2 Corridor
+                        Road Expansion – North Bengaluru Corridor
                       </div>
                       <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-surface-container-lowest/95 backdrop-blur p-2 rounded-xl text-xs">
                         <span>High Risk Polygon: <strong>Sy. 142/2A</strong></span>

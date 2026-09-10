@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { subscribeApiStatus, getApiStatus } from '../services/api';
 
 const AuthRoleContext = createContext();
 
@@ -11,6 +12,15 @@ export function AuthRoleProvider({ children }) {
   const [language, setLanguage] = useState('en'); // 'en' or 'kn'
   const [isAffidavitSigned, setIsAffidavitSigned] = useState(false);
   const [notificationCount, setNotificationCount] = useState(3);
+  const [apiStatus, setApiStatus] = useState(getApiStatus());
+  const [isTechStackOpen, setIsTechStackOpen] = useState(false);
+
+  useEffect(() => {
+    const unsubscribe = subscribeApiStatus((newStatus) => {
+      setApiStatus(newStatus);
+    });
+    return () => unsubscribe();
+  }, []);
 
   const changeRole = (newRole) => {
     setRole(newRole);
@@ -32,7 +42,10 @@ export function AuthRoleProvider({ children }) {
         isAffidavitSigned,
         setIsAffidavitSigned,
         notificationCount,
-        setNotificationCount
+        setNotificationCount,
+        apiStatus,
+        isTechStackOpen,
+        setIsTechStackOpen
       }}
     >
       {children}
