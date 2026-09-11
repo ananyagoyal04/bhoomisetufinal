@@ -2,8 +2,16 @@ import React, { useState, useEffect } from 'react';
 import CitizenHeader, { CitizenFooter } from '../components/layout/CitizenHeader';
 import LeaseModal from '../components/modals/LeaseModal';
 import { apiService } from '../services/api';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, Polygon, Tooltip, useMap } from 'react-leaflet';
 import L from 'leaflet';
+
+// Formatter to display coordinates in human-readable notation (e.g. 13.0984° N, 77.3925° E)
+const formatCoordinates = (lat, lng) => {
+  if (lat == null || lng == null) return '';
+  const latDir = lat >= 0 ? 'N' : 'S';
+  const lngDir = lng >= 0 ? 'E' : 'W';
+  return `${Math.abs(lat).toFixed(4)}° ${latDir}, ${Math.abs(lng).toFixed(4)}° ${lngDir}`;
+};
 
 // Reusable dark-teal pin matching the Bhoomi Setu design system with active highlight state
 const createPinIcon = (isSelected = false) => L.divIcon({
@@ -40,21 +48,30 @@ const createPinIcon = (isSelected = false) => L.divIcon({
   iconAnchor: [20, 40],
 });
 
-// Map Controller to smoothly pan/fly to the selected parcel's coordinates
+// Map Controller to fit map bounds to the selected parcel's polygon boundary or pan to coordinates
 function MapController({ selectedLand }) {
   const map = useMap();
 
   useEffect(() => {
     if (selectedLand) {
-      const lat = selectedLand.latitude ?? selectedLand.coordinates?.[0];
-      const lng = selectedLand.longitude ?? selectedLand.coordinates?.[1];
-      if (lat != null && lng != null) {
-        const currentZoom = map.getZoom();
-        const targetZoom = currentZoom < 12 ? 13 : currentZoom;
-        map.flyTo([lat, lng], targetZoom, {
-          duration: 1.0,
-          easeLinearity: 0.25
+      if (selectedLand.boundary && selectedLand.boundary.length > 0) {
+        map.fitBounds(selectedLand.boundary, {
+          padding: [50, 50],
+          maxZoom: 15,
+          animate: true,
+          duration: 1.0
         });
+      } else {
+        const lat = selectedLand.latitude ?? selectedLand.coordinates?.[0];
+        const lng = selectedLand.longitude ?? selectedLand.coordinates?.[1];
+        if (lat != null && lng != null) {
+          const currentZoom = map.getZoom();
+          const targetZoom = currentZoom < 12 ? 13 : currentZoom;
+          map.flyTo([lat, lng], targetZoom, {
+            duration: 1.0,
+            easeLinearity: 0.25
+          });
+        }
       }
     }
   }, [selectedLand, map]);
@@ -260,6 +277,30 @@ export default function CitizenSearch() {
 
                     <MapController selectedLand={selectedLand} />
 
+                    {/* Render Polygon boundary for selected land parcel only */}
+                    {selectedLand?.boundary && (
+                      <Polygon
+                        positions={selectedLand.boundary}
+                        pathOptions={{
+                          color: '#0e6a5b',       // Solid darker teal/green border
+                          weight: 2.5,
+                          fillColor: '#22C55E',   // Light green fill
+                          fillOpacity: 0.25,
+                          dashArray: '4, 4'
+                        }}
+                      >
+                        <Tooltip sticky direction="top">
+                          <div className="font-sans text-xs p-1">
+                            <strong className="text-primary block font-bold">{selectedLand.surveyNo} ({selectedLand.extent})</strong>
+                            <span className="text-on-surface-variant text-[11px] block">{selectedLand.classification}</span>
+                            <span className="text-secondary font-mono text-[10px] block font-semibold mt-0.5">
+                              {formatCoordinates(selectedLand.latitude ?? selectedLand.coordinates?.[0], selectedLand.longitude ?? selectedLand.coordinates?.[1])}
+                            </span>
+                          </div>
+                        </Tooltip>
+                      </Polygon>
+                    )}
+
                     {filteredLands.map((land) => {
                       const isMarkerSelected = selectedLand?.id === land.id;
                       const lat = land.latitude ?? land.coordinates?.[0];
@@ -280,6 +321,9 @@ export default function CitizenSearch() {
                               <div className="font-bold text-primary">{land.surveyNo} ({land.extent})</div>
                               <div className="text-on-surface-variant">{land.location}, {land.district}</div>
                               <div className="text-secondary font-bold mt-1">{land.type}</div>
+                              <div className="text-on-surface-variant font-mono text-[10px] mt-0.5">
+                                {formatCoordinates(lat, lng)}
+                              </div>
                               <button
                                 onClick={() => handleApplyLease(land)}
                                 className="w-full mt-2 py-1 bg-primary text-white rounded font-bold text-[10px]"
@@ -293,9 +337,13 @@ export default function CitizenSearch() {
                     })}
                   </MapContainer>
 
-                  <div className="absolute bottom-3 left-3 bg-surface-container-lowest/95 backdrop-blur px-3 py-1.5 rounded-xl shadow-md text-caption font-caption text-primary flex items-center gap-2 text-xs z-[400]">
+                  <div className="absolute bottom-3 left-3 bg-surface-container-lowest/95 backdrop-blur px-3 py-1.5 rounded-xl shadow-md text-caption font-caption text-primary flex items-center gap-2 text-xs z-[400] border border-surface-container">
                     <span className="w-2 h-2 rounded-full bg-secondary"></span>
-                    <span>KSRSAC Unencumbered Cadastral Reserves Active</span>
+                    <span>
+                      {selectedLand 
+                        ? `Selected: Sy. ${selectedLand.surveyNo} (${formatCoordinates(selectedLand.latitude ?? selectedLand.coordinates?.[0], selectedLand.longitude ?? selectedLand.coordinates?.[1])})`
+                        : 'KSRSAC Unencumbered Cadastral Reserves Active'}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -349,6 +397,12 @@ export default function CitizenSearch() {
                           <span className="text-on-surface-variant block">Connectivity:</span>
                           <span className="font-bold text-on-surface">{land.nhDistance}</span>
                         </div>
+                      </div>
+
+                      {/* Coordinates display */}
+                      <div className="flex items-center gap-1.5 text-[11px] text-on-surface-variant font-mono bg-surface-container-low/60 px-2.5 py-1 rounded-lg border border-surface-container/50 mb-space-xs">
+                        <span className="material-symbols-outlined text-[14px] text-secondary">explore</span>
+                        <span>Center: <strong className="text-on-surface">{formatCoordinates(land.latitude ?? land.coordinates?.[0], land.longitude ?? land.coordinates?.[1])}</strong></span>
                       </div>
 
                       <div className="flex items-center justify-between pt-1 text-xs">

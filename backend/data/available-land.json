@@ -16,6 +16,13 @@
     "latitude": 13.0984,
     "longitude": 77.3925,
     "coordinates": [13.0984, 77.3925],
+    "boundary": [
+      [13.0998, 77.3912],
+      [13.1002, 77.3938],
+      [13.0975, 77.3942],
+      [13.0968, 77.3922],
+      [13.0978, 77.3910]
+    ],
     "guidanceValue": "₹95 Lakhs / Acre",
     "eligibleLease": "Up to 30 Years Industrial / Agri Lease"
   },
@@ -36,6 +43,13 @@
     "latitude": 12.7845,
     "longitude": 77.4012,
     "coordinates": [12.7845, 77.4012],
+    "boundary": [
+      [12.7856, 77.4001],
+      [12.7859, 77.4024],
+      [12.7836, 77.4026],
+      [12.7831, 77.4008],
+      [12.7842, 77.3998]
+    ],
     "guidanceValue": "₹1.20 Cr / Acre",
     "eligibleLease": "Direct Allotment via Single Window Portal"
   },
@@ -56,6 +70,13 @@
     "latitude": 13.2512,
     "longitude": 77.7289,
     "coordinates": [13.2512, 77.7289],
+    "boundary": [
+      [13.2534, 77.7268],
+      [13.2541, 77.7312],
+      [13.2498, 77.7319],
+      [13.2486, 77.7282],
+      [13.2501, 77.7262]
+    ],
     "guidanceValue": "₹1.40 Cr / Acre",
     "eligibleLease": "Public-Private Logistics & Agro-processing"
   }
