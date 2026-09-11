@@ -24,9 +24,6 @@ export default function CitizenHeader() {
           <span>Bhoomi Spatial Records Governance</span>
         </div>
         <div className="flex items-center gap-space-md">
-          {/* System Status in Citizen Bar */}
-          <SystemStatusBadge compact={true} />
-
           <div className="flex items-center gap-space-xxs text-on-primary-fixed-variant">
             <button
               onClick={toggleLanguage}
@@ -217,7 +214,7 @@ export function CitizenFooter() {
 
       <div className="bg-surface-container py-space-sm px-margin-desktop text-center font-caption text-caption text-on-surface-variant border-t border-surface-container-high/40 flex flex-wrap items-center justify-between gap-2 max-w-container-max mx-auto">
         <span>© 2026 Revenue Department, Government of Karnataka. All Rights Reserved.</span>
-        <SystemStatusBadge />
+        <span>KLA Act 2013 Statutory Spatial Engine</span>
       </div>
     </footer>
   );

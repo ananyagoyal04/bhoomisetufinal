@@ -4,7 +4,7 @@ import { useAuthRole } from '../../context/AuthRoleContext';
 export default function AffidavitModal({
   isOpen = false,
   onClose = () => {},
-  caseId = "WP-4821/2025",
+  caseId = "WP-4821/2026",
   surveyNo = "Sy. 142/2A"
 }) {
   const { isAffidavitSigned, setIsAffidavitSigned } = useAuthRole();
@@ -48,7 +48,7 @@ export default function AffidavitModal({
           </div>
           <div className="flex justify-between">
             <span className="text-on-surface-variant font-medium">Next Milestone:</span>
-            <span className="font-semibold text-error">Hearing: Feb 12, 2026 (Court Hall 4)</span>
+            <span className="font-semibold text-error">Hearing: Sep 18, 2026 (Court Hall 4)</span>
           </div>
           <div className="flex justify-between">
             <span className="text-on-surface-variant font-medium">Stay Injunction Risk:</span>

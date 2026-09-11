@@ -104,7 +104,7 @@ export default function CitizenApplications() {
                     </span>
                     <h3 className="font-subheading text-on-surface font-semibold">Preliminary Notice</h3>
                     <span className="inline-block font-caption text-secondary font-medium bg-secondary-container/40 px-2 py-0.5 rounded text-[10px]">
-                      Completed: 15 Oct 2025
+                      Completed: 02 Sep 2026
                     </span>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ export default function CitizenApplications() {
                     </span>
                     <h3 className="font-subheading text-on-surface font-semibold">Hearing Objections</h3>
                     <span className="inline-block font-caption text-secondary font-medium bg-secondary-container/40 px-2 py-0.5 rounded text-[10px]">
-                      Completed: 20 Nov 2025
+                      Completed: 06 Sep 2026
                     </span>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export default function CitizenApplications() {
                     </span>
                     <h3 className="font-subheading text-on-surface font-semibold">Final Declaration</h3>
                     <span className="inline-block font-caption text-secondary font-medium bg-secondary-container/40 px-2 py-0.5 rounded text-[10px]">
-                      Completed: 10 Jan 2026
+                      Completed: 10 Sep 2026
                     </span>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export default function CitizenApplications() {
                     </span>
                     <h3 className="font-subheading text-primary font-bold">Award Inquiry & Valuation</h3>
                     <span className="inline-flex items-center gap-1 font-caption font-bold bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded text-[10px]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-amber-800"></span> Active: Feb 2026
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-800"></span> Active: Sep 2026
                     </span>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function CitizenApplications() {
                 <span className="material-symbols-outlined text-primary text-[24px]">info</span>
                 <div className="text-xs">
                   <p className="font-semibold text-on-surface">Statutory Time Constraint for Current Stage</p>
-                  <p className="text-on-surface-variant">Under Section 25 of the 2013 Act, the SLA to declare an Award lapses on Jan 09, 2027 (12 months from Sec 19 notification).</p>
+                  <p className="text-on-surface-variant">Under Section 25 of the 2013 Act, the SLA to declare an Award lapses on Sep 10, 2027 (12 months from Sec 19 notification).</p>
                 </div>
               </div>
               <button className="shrink-0 bg-surface-container-lowest text-primary px-space-md py-1.5 rounded-xl font-bold hover:bg-primary hover:text-on-primary shadow-sm transition-colors text-xs border border-surface-container">
@@ -218,7 +218,7 @@ export default function CitizenApplications() {
                         Statutory Gazette Notification
                       </span>
                     </div>
-                    <span className="text-outline">29 Jan 2026, 11:20 AM</span>
+                    <span className="text-outline">08 Sep 2026, 11:20 AM</span>
                   </div>
 
                   <div>
@@ -236,7 +236,7 @@ export default function CitizenApplications() {
                   <div className="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs text-xs">
                     <div className="flex items-center gap-1 text-outline">
                       <span className="material-symbols-outlined text-[16px]">timer</span>
-                      <span>Mandate deadline: 15 Feb 2026</span>
+                      <span>Mandate deadline: 22 Sep 2026</span>
                     </div>
                     <button
                       onClick={() => setUploaded(true)}
@@ -259,7 +259,7 @@ export default function CitizenApplications() {
                         Proactive Dispute Mitigation Alert
                       </span>
                     </div>
-                    <span className="text-outline">27 Jan 2026, 04:45 PM</span>
+                    <span className="text-outline">09 Sep 2026, 04:45 PM</span>
                   </div>
 
                   <div>
@@ -270,7 +270,7 @@ export default function CitizenApplications() {
                       </span>
                     </div>
                     <p className="text-body-md text-on-surface-variant mt-1 text-xs leading-relaxed">
-                      Our ML algorithm detected a <span className="font-bold text-error">93% deviation</span> between claimed rate and local circle rate. Tahsildar has scheduled a Circle Rate Harmonization Hearing on <span className="font-bold text-on-surface">Feb 12</span> to prevent tribunal escalation.
+                      Our ML algorithm detected a <span className="font-bold text-error">93% deviation</span> between claimed rate and local circle rate. Tahsildar has scheduled a Circle Rate Harmonization Hearing on <span className="font-bold text-on-surface">Sep 18</span> to prevent tribunal escalation.
                     </p>
                   </div>
 
@@ -331,7 +331,7 @@ export default function CitizenApplications() {
                       <span className="material-symbols-outlined text-secondary text-[26px]">task</span>
                       <div>
                         <h3 className="font-subheading text-primary font-bold text-sm">Form 14 Compensation Claim</h3>
-                        <p className="font-caption text-on-surface-variant text-[11px]">Reference: CLM-142-2A-2025</p>
+                        <p className="font-caption text-on-surface-variant text-[11px]">Reference: CLM-142-2A-2026</p>
                       </div>
                     </div>
                     <span className="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container font-bold px-2 py-0.5 rounded-full text-[10px]">
@@ -339,7 +339,7 @@ export default function CitizenApplications() {
                     </span>
                   </div>
                   <div className="flex items-center justify-between pt-space-xs text-xs text-on-surface-variant">
-                    <span>Timestamp: 18 Jan 2026</span>
+                    <span>Timestamp: 08 Sep 2026</span>
                     <button
                       onClick={() => setActiveDocModal('Form 14 Claim Receipt')}
                       className="text-secondary font-bold hover:underline flex items-center gap-0.5"

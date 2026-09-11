@@ -120,7 +120,7 @@ export default function OfficerDashboard() {
                       Active Acquisitions
                     </span>
                     <div className="text-headline-md font-headline-md font-bold text-on-surface mt-1 group-hover:text-primary transition-colors text-2xl">
-                      12 Projects
+                      2 Projects
                     </div>
                   </div>
                   <div className="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
@@ -128,9 +128,9 @@ export default function OfficerDashboard() {
                   </div>
                 </div>
                 <div className="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant text-xs border-t border-surface-container/40">
-                  <span className="truncate">Bengaluru Urban & Rural</span>
+                  <span className="truncate">Bengaluru Rural & Ramanagara</span>
                   <span className="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-bold text-[11px]">
-                    +2 New
+                    2 Active
                   </span>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export default function OfficerDashboard() {
                       Pending Approvals
                     </span>
                     <div className="text-headline-md font-headline-md font-bold text-on-surface mt-1 group-hover:text-primary transition-colors text-2xl">
-                      7 Notices
+                      3 Notices
                     </div>
                   </div>
                   <div className="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
@@ -153,7 +153,7 @@ export default function OfficerDashboard() {
                 <div className="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant text-xs border-t border-surface-container/40">
                   <span>Section 11 & 19 Gazettes</span>
                   <span className="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-bold text-[11px]">
-                    3 Critical
+                    1 Action Req.
                   </span>
                 </div>
               </div>
@@ -166,7 +166,7 @@ export default function OfficerDashboard() {
                       Delay Prediction
                     </span>
                     <div className="text-headline-md font-headline-md font-bold text-error mt-1 flex items-baseline gap-1 text-2xl">
-                      18
+                      2
                       <span className="text-caption font-caption text-on-surface-variant font-normal text-xs">Parcels flagged</span>
                     </div>
                   </div>
@@ -176,7 +176,7 @@ export default function OfficerDashboard() {
                 </div>
                 <div className="mt-space-sm pt-space-xs flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant text-xs border-t border-surface-container/40">
                   <span className="text-error font-bold">Flagged by Spatial ML</span>
-                  <span className="text-caption font-caption">Avg delay +38d</span>
+                  <span className="text-caption font-caption">Avg delay +30d</span>
                 </div>
               </div>
 
@@ -218,7 +218,7 @@ export default function OfficerDashboard() {
                     </span>
                   </div>
                   <p className="text-body-sm font-body-sm text-surface-container-lowest mt-0.5 text-xs md:text-sm">
-                    ML Model flagged <span className="font-bold text-secondary-fixed">3 parcels</span> in Ramanagara Industrial Sub-Corridor with <span className="underline decoration-secondary-fixed font-bold">+45 days projected legal bottleneck</span> due to circle rate escalation claims.
+                    ML Model flagged <span className="font-bold text-secondary-fixed">1 parcel</span> in Ramanagara Industrial Sub-Corridor with <span className="underline decoration-secondary-fixed font-bold">+18 days projected legal bottleneck</span> due to circle rate escalation claims.
                   </p>
                 </div>
               </div>
@@ -246,19 +246,19 @@ export default function OfficerDashboard() {
                         Acquisition Projects by Delay Risk
                       </h2>
                       <p className="text-caption font-caption text-on-surface-variant text-xs">
-                        Real-time risk scoring across 44 total monitored land parcels in active gazettes
+                        Real-time risk scoring across 42 total monitored land parcels in active gazettes
                       </p>
                     </div>
                     <span className="px-2 py-1 rounded-lg bg-surface-container text-caption font-caption font-bold text-on-surface-variant text-xs">
-                      Total: 44 Parcels
+                      Total: 42 Parcels
                     </span>
                   </div>
 
                   {/* Distribution Bar */}
                   <div className="w-full h-4 rounded-full bg-surface-container flex overflow-hidden p-0.5">
-                    <div className="h-full bg-secondary rounded-l-full transition-all duration-500 hover:opacity-90" style={{ width: '54.5%' }} title="Low Risk: 24 parcels (54.5%)"></div>
-                    <div className="h-full bg-amber-500 transition-all duration-500 hover:opacity-90 mx-0.5" style={{ width: '31.8%' }} title="Medium Risk: 14 parcels (31.8%)"></div>
-                    <div className="h-full bg-error rounded-r-full transition-all duration-500 hover:opacity-90" style={{ width: '13.7%' }} title="High Risk: 6 parcels (13.7%)"></div>
+                    <div className="h-full bg-secondary rounded-l-full transition-all duration-500 hover:opacity-90" style={{ width: '57.1%' }} title="Low Risk: 24 parcels (57.1%)"></div>
+                    <div className="h-full bg-amber-500 transition-all duration-500 hover:opacity-90 mx-0.5" style={{ width: '28.6%' }} title="Medium Risk: 12 parcels (28.6%)"></div>
+                    <div className="h-full bg-error rounded-r-full transition-all duration-500 hover:opacity-90" style={{ width: '14.3%' }} title="High Risk: 6 parcels (14.3%)"></div>
                   </div>
 
                   {/* Breakdown Blocks */}
@@ -270,7 +270,7 @@ export default function OfficerDashboard() {
                       </div>
                       <div className="mt-1 flex items-baseline justify-between">
                         <span className="text-lg font-bold text-secondary">24</span>
-                        <span className="text-on-surface-variant">54.5%</span>
+                        <span className="text-on-surface-variant">57.1%</span>
                       </div>
                       <span className="text-[11px] text-on-surface-variant block mt-0.5">On Schedule</span>
                     </div>
@@ -281,8 +281,8 @@ export default function OfficerDashboard() {
                         <span>Medium Risk</span>
                       </div>
                       <div className="mt-1 flex items-baseline justify-between">
-                        <span className="text-lg font-bold text-amber-700">14</span>
-                        <span className="text-on-surface-variant">31.8%</span>
+                        <span className="text-lg font-bold text-amber-700">12</span>
+                        <span className="text-on-surface-variant">28.6%</span>
                       </div>
                       <span className="text-[11px] text-on-surface-variant block mt-0.5">Notice Review</span>
                     </div>
@@ -294,7 +294,7 @@ export default function OfficerDashboard() {
                       </div>
                       <div className="mt-1 flex items-baseline justify-between">
                         <span className="text-lg font-bold text-error">6</span>
-                        <span className="text-on-surface-variant">13.7%</span>
+                        <span className="text-on-surface-variant">14.3%</span>
                       </div>
                       <span className="text-[11px] text-error font-bold block mt-0.5">Intervention Req.</span>
                     </div>

@@ -150,13 +150,13 @@ export default function CitizenSearch() {
                 <div className="px-space-sm py-space-xxs text-right">
                   <div className="font-caption text-caption text-on-surface-variant text-[11px]">Active Land Pool</div>
                   <div className="font-headline-sm text-headline-sm text-primary font-bold text-lg">
-                    1,420 <span className="font-body-sm font-normal text-on-surface-variant text-xs">Acres</span>
+                    7.6 <span className="font-body-sm font-normal text-on-surface-variant text-xs">Acres</span>
                   </div>
                 </div>
                 <div className="w-px h-8 bg-surface-container-high"></div>
                 <div className="px-space-sm py-space-xxs text-right">
                   <div className="font-caption text-caption text-on-surface-variant text-[11px]">Total Unencumbered</div>
-                  <div className="font-headline-sm text-headline-sm text-secondary font-bold text-lg">98.4%</div>
+                  <div className="font-headline-sm text-headline-sm text-secondary font-bold text-lg">100%</div>
                 </div>
               </div>
             </div>

@@ -5,16 +5,16 @@
     "score": 78,
     "riskLevel": "High",
     "kannadaRisk": "ಅಧಿಕ ಅಪಾಯ",
-    "breachForecastDays": 114,
+    "breachForecastDays": 42,
     "confidenceInterval": "91.4% (XGBoost v4.8)",
-    "targetDeadline": "15 Mar 2026",
-    "revisedDeadline": "07 Jul 2026",
+    "targetDeadline": "15 Sep 2026",
+    "revisedDeadline": "27 Oct 2026",
     "drivers": [
       {
         "factor": "Disputed Circle Rate vs. Market Expectation",
         "kannadaFactor": "ಮಾರ್ಗದರ್ಶಿ ಮೌಲ್ಯ ಮತ್ತು ಮಾರುಕಟ್ಟೆ ಬೇಡಿಕೆ ವ್ಯತ್ಯಾಸ",
         "contribution": 38,
-        "days": 43,
+        "days": 18,
         "shapValue": "+0.381",
         "detail": "Guidance Value: ₹1.45 Cr/Acre vs. Owner Claim: ₹2.80 Cr/Acre (93.1% discrepancy)",
         "severity": "Critical"
@@ -23,16 +23,16 @@
         "factor": "Pending Sec 19 Final Notification Gazetting",
         "kannadaFactor": "ಸೆಕ್ಷನ್ ೧೯ ಗೆಜೆಟ್ ಅಧಿಸೂಚನೆ ಬಾಕಿ",
         "contribution": 26,
-        "days": 30,
+        "days": 12,
         "shapValue": "+0.264",
         "detail": "Statutory 12-month lapse risk from preliminary notification (Sec 11)",
         "severity": "Critical"
       },
       {
-        "factor": "High Court Land Tribunal Stay Petition (WP 4821/2025)",
+        "factor": "High Court Land Tribunal Stay Petition (WP 4821/2026)",
         "kannadaFactor": "ಉಚ್ಚ ನ್ಯಾಯಾಲಯದ ತಡೆಯಾಜ್ಞೆ ಅರ್ಜಿ",
         "contribution": 14,
-        "days": 16,
+        "days": 8,
         "shapValue": "+0.142",
         "detail": "Interim injunction filed by legal co-heir challenging acquisition zone line",
         "severity": "Moderate"
@@ -41,13 +41,13 @@
         "factor": "Joint Khata Heirship Documentation Incomplete",
         "kannadaFactor": "ಜಂಟಿ ಖಾತೆ ವಂಶವೃಕ್ಷ ಪ್ರಮಾಣಪತ್ರ ಅಪೂರ್ಣ",
         "contribution": 6,
-        "days": 7,
+        "days": 4,
         "shapValue": "+0.061",
         "detail": "Family genealogical tree (Vamshavruksha) pending Tahsildar counter-signature",
         "severity": "Low"
       }
     ],
-    "summary": "Score driven mainly by disputed valuation (93% spread) and pending statutory gazetting. ML model evaluated 1,420 historical acquisitions in Devanahalli taluk.",
+    "summary": "Score driven mainly by disputed valuation (93% spread) and pending statutory gazetting. ML model evaluated historical pilot acquisitions in Devanahalli taluk.",
     "recommendation": "Convene Special Adalat hearing for Circle Rate Harmonization under Rule 14 before DC Bengaluru Rural. Pre-empts High Court litigation by 4.2 months.",
     "disasterVulnerability": {
       "floodExposure": { "zone": "Zone 1", "level": "Safe / Low" },
@@ -61,16 +61,16 @@
     "score": 52,
     "riskLevel": "Medium",
     "kannadaRisk": "ಮಧ್ಯಮ ಅಪಾಯ",
-    "breachForecastDays": 30,
+    "breachForecastDays": 18,
     "confidenceInterval": "88.2% (XGBoost v4.8)",
-    "targetDeadline": "30 Apr 2026",
-    "revisedDeadline": "30 May 2026",
+    "targetDeadline": "18 Sep 2026",
+    "revisedDeadline": "06 Oct 2026",
     "drivers": [
       {
         "factor": "Rehabilitation & Resettlement Tranche 2 Allotment",
         "kannadaFactor": "ಪುನರ್ವಸತಿ ೨ನೇ ಕಂತು ಹಂಚಿಕೆ ವಿಳಂಬ",
         "contribution": 32,
-        "days": 16,
+        "days": 8,
         "shapValue": "+0.318",
         "detail": "Alternative commercial industrial shed allotment approval pending at KIADB head office",
         "severity": "Moderate"
@@ -79,7 +79,7 @@
         "factor": "Gram Panchayat Non-Encumbrance Verification",
         "kannadaFactor": "ಗ್ರಾಮ ಪಂಚಾಯತಿ ಎನ್‌ಒಸಿ ಪರಿಶೀಲನೆ",
         "contribution": 12,
-        "days": 8,
+        "days": 6,
         "shapValue": "+0.121",
         "detail": "Bidadi GP resolution awaiting signature from Panchayat Development Officer",
         "severity": "Moderate"
@@ -88,7 +88,7 @@
         "factor": "Section 15 Objection Hearing Adjournment",
         "kannadaFactor": "ಸೆಕ್ಷನ್ ೧೫ ಆಕ್ಷೇಪಣೆ ವಿಚಾರಣೆ ಮುಂದೂಡಿಕೆ",
         "contribution": 8,
-        "days": 6,
+        "days": 4,
         "shapValue": "+0.082",
         "detail": "Joint land inspection rescheduled due to monsoon waterlogging survey",
         "severity": "Low"

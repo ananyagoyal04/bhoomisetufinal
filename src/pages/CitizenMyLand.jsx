@@ -143,7 +143,7 @@ export default function CitizenMyLand() {
                       <span className="material-symbols-outlined text-secondary text-[20px]">pin_drop</span>
                       <div>
                         <span className="font-bold text-primary block">Survey Ground Verification</span>
-                        <span className="text-on-surface-variant">Validated by Taluk Surveyor M. Chennappa on 14 Jan 2026</span>
+                        <span className="text-on-surface-variant">Validated by Taluk Surveyor M. Chennappa on 04 Sep 2026</span>
                       </div>
                     </div>
                   </div>

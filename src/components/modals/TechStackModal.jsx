@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useAuthRole } from '../../context/AuthRoleContext';
 
 export default function TechStackModal() {
-  const { isTechStackOpen, setIsTechStackOpen, apiStatus } = useAuthRole();
+  const { isTechStackOpen, setIsTechStackOpen } = useAuthRole();
   const [activeTab, setActiveTab] = useState('current'); // 'current' | 'roadmap'
   const [expandedCard, setExpandedCard] = useState('leaflet');
 
@@ -21,13 +21,13 @@ export default function TechStackModal() {
     },
     {
       id: 'fastapi',
-      name: 'FastAPI (Python Service)',
-      category: 'Mock API Service',
-      status: apiStatus === 'live' ? 'Connected (Port 8000)' : 'Bundled JSON Fallback',
+      name: 'Structured REST Schema',
+      category: 'Mock Data Service',
+      status: 'In-Memory Client Schema',
       icon: 'api',
-      badgeClass: apiStatus === 'live' ? 'bg-emerald-100 text-emerald-900 border-emerald-300' : 'bg-amber-100 text-amber-900 border-amber-300',
-      summary: 'Asynchronous Python mock backend serving standard REST endpoints with 1.2s client-side resilient offline fallback.',
-      details: 'Serves /api/projects, /api/parcels, /api/delay/{id}, /api/approvals/{id}, and /api/available-land. Fully structured so frontend can swap to real database endpoints without schema changes.'
+      badgeClass: 'bg-emerald-100 text-emerald-900 border-emerald-300',
+      summary: 'Structured mock dataset serving standard REST schemas for acquisition entities.',
+      details: 'Serves structured endpoints for projects, parcels, delay explanations, approvals, and available-land. Fully structured so frontend can swap to real database endpoints without schema changes.'
     },
     {
       id: 'pandas',
@@ -46,7 +46,7 @@ export default function TechStackModal() {
       status: 'Simulated Model Output (Score: 78/100)',
       icon: 'psychology',
       badgeClass: 'bg-amber-100 text-amber-900 border-amber-300',
-      summary: 'Gradient-boosted decision trees predicting timeline breaches (+114 days) based on cadastral friction features.',
+      summary: 'Gradient-boosted decision trees predicting timeline breaches (+42 days) based on cadastral friction features.',
       details: 'Trained on statutory milestones (Section 11 to Section 19 SLA window). Outputs a calibrated 0-100 risk score and breach day confidence intervals.'
     },
     {
@@ -176,10 +176,8 @@ export default function TechStackModal() {
           </div>
 
           <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-xl bg-surface-container-lowest text-[11px] text-on-surface-variant border border-surface-container">
-            <span className="font-semibold text-primary">Live API Mode:</span>
-            <span className={apiStatus === 'live' ? 'text-emerald-700 font-bold' : 'text-amber-800 font-bold'}>
-              {apiStatus === 'live' ? 'FastAPI Active' : 'Bundled JSON Seed'}
-            </span>
+            <span className="font-semibold text-primary">Data Layer:</span>
+            <span className="text-secondary font-bold">Standard GeoJSON Schema</span>
           </div>
         </div>
 
@@ -189,7 +187,7 @@ export default function TechStackModal() {
           <p className="text-on-surface-variant leading-relaxed">
             {activeTab === 'current' ? (
               <span>
-                <strong>Transparent Architectural Disclosure:</strong> The active demonstration operates on a structured in-memory mock schema backed by a lightweight Python FastAPI microservice (with zero-config offline fallback). Precomputed XGBoost scores and SHAP attributions simulate live machine learning outputs.
+                <strong>Transparent Architectural Disclosure:</strong> The active demonstration operates on a structured in-memory mock schema. Precomputed XGBoost scores and SHAP attributions simulate live machine learning outputs.
               </span>
             ) : (
               <span>

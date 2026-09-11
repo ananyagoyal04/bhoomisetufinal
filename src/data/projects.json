@@ -10,14 +10,14 @@
     "risk": "High",
     "riskScore": 78,
     "delayScore": 78,
-    "breachForecastDays": 114,
+    "breachForecastDays": 42,
     "parcelsCount": 24,
     "affectedLandowners": 14,
     "surveyRange": "142/2A to 148/1",
     "primaryBottleneck": "Disputed Circle Rate & Sec 19 Delay",
     "status": "Action Required",
     "gazetteStage": "Section 19",
-    "compensationTotal": "₹340 Cr",
+    "compensationTotal": "₹14.8 Cr",
     "coordinates": [13.2435, 77.7126]
   },
   {
@@ -31,14 +31,14 @@
     "risk": "Medium",
     "riskScore": 52,
     "delayScore": 52,
-    "breachForecastDays": 30,
+    "breachForecastDays": 18,
     "parcelsCount": 18,
     "affectedLandowners": 9,
     "surveyRange": "89/1B to 102/4",
     "primaryBottleneck": "Rehabilitation Settlement Pending (R&R 2nd Tranche)",
     "status": "Settlement Pending",
     "gazetteStage": "Section 11",
-    "compensationTotal": "₹185 Cr",
+    "compensationTotal": "₹7.5 Cr",
     "coordinates": [12.7984, 77.3878]
   }
 ]

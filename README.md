@@ -1,4 +1,4 @@
-#  Bhoomi Setu — Karnataka Land Acquisition Management & Spatial Portal
+# Bhoomi Setu — Karnataka Land Acquisition Management & Spatial Portal
 
 ### Department of Revenue, Government of Karnataka
 
@@ -8,51 +8,45 @@
 
 🌐 **[bhoomisetufinal.vercel.app](https://bhoomisetufinal.vercel.app/)**
 
+---
+
 ## 🌟 Key Features
 
-* 🔐 **Role-Based Access** — Government Officer, Senior Official, and Verified Citizen portals.
-* 📊 **Officer Dashboard** — Acquisition KPIs, project monitoring, and delay risk analysis.
-* 🗺️ **Interactive GIS Map** — Cadastral boundaries, parcel details, and valuation analysis.
-* 🤖 **ML Delay Prediction** — XGBoost-based delay risk forecasting.
-* 🔎 **SHAP Explainability** — Feature-level explanation of predicted risks.
-* ⚖️ **Statutory Tracking** — Multi-stage acquisition and approval pipeline.
-* 🏛️ **Senior Dashboard** — Cross-district progress, litigation, and R&R tracking.
-* 👤 **Citizen Land Dossier** — Parcel records, compensation calculator, and Safe & Clear verification.
-* 🔍 **Public Land Bank** — Search government land by district, taluk, and extent.
-* 🔔 **Applications & Alerts** — Acquisition progress, notifications, and document tracking.
+- **Role-Based Access Gateway (`/`)**: Government Officer, Senior Official, and Verified Citizen portals.
+- **Officer Dashboard (`/officer/dashboard`)**: Acquisition KPIs, delay risk distribution breakdown, and monitored projects (`Road Expansion – North Bengaluru` & `Ramanagara Industrial Corridor`).
+- **Interactive GIS Map (`/officer/project/:id`)**: React-Leaflet GIS with OpenStreetMap tiles, cadastral boundaries, and slide-out parcel dossier with circle rate vs market valuation spread analysis.
+- **ML Delay Explainability (`/officer/parcel/:id/risk`)**: XGBoost timeline breach forecasting (+114 days, 78% risk) and SHAP feature attribution bar chart with 4-tier statutory approval pipeline.
+- **Senior Official Dashboard (`/senior/dashboard`)**: Cross-district progress, High Court stay litigation tracker with digital affidavit sign-off, and R&R rehabilitation fulfillment metrics.
+- **Citizen My Land Dossier (`/citizen/my-land`)**: Landowner parcel records, RFCTLARR fair compensation calculator (₹3.92 Cr), and unencumbered Safe & Clear verification.
+- **Public Land Bank Search (`/citizen/search`)**: Discover unencumbered government reserves by District, Taluk, and Extent with lease application workflow.
+- **Citizen Applications & Alerts (`/citizen/applications`)**: 5-stage acquisition stepper, statutory notifications, and tamper-proof document repository.
+- **Interactive Tech Stack Architecture**: Modal detailing the Current Prototype Stack vs Planned Production Roadmap.
 
-## 🛠️ Tech Stack
+---
 
-**Frontend:** React 18, Vite, React-Leaflet, Leaflet, Recharts, Tailwind CSS, Lucide Icons
+## 🛠️ Architecture & Tech Stack
 
-**Backend:** FastAPI, Python 3.10+, CORS, JSON-based Mock API with offline fallback
+### Current Live Prototype Stack
+- **Frontend**: React 18, React-Leaflet, Leaflet, Recharts, Lucide Icons, Material Symbols, Tailwind CSS, Vite
+- **Data Layer**: Direct client-bundled statutory JSON data repository (deterministic pilot dataset)
+- **ML & Explainability**: XGBoost delay risk scoring & SHAP feature attributions
 
-**Data & ML:** Pandas, XGBoost, SHAP
+### Planned Production Stack
+- **Database & Spatial Mesh**: PostgreSQL 16 + PostGIS for state-wide vector polygons and GeoServer WMS/WFS layers
+- **Live Model Serving**: Ray Serve / Triton with automated drift re-training
+- **Identity & Auth**: K-Kavach Single Sign-On (SSO) with Aadhaar-based OTP and PKI e-Sign 256-bit certificates
 
-## 🏗️ Architecture
+---
 
-```text
-React Frontend
-      ↓
-FastAPI Mock API
-      ↓
-JSON Data Repository
-      ↓
-Pandas Data Processing
-      ↓
-XGBoost Risk Prediction
-      ↓
-SHAP Explainability
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
 ```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## 🔮 Planned Production Stack
-
-* PostgreSQL + PostGIS
-* GeoServer WMS/WFS
-* Ray Serve / Triton for ML serving
-* K-Kavach SSO
-* PKI-based Digital Signatures
-* Automated ML monitoring and retraining
+---
 
 ## 🏛️ Governance
 

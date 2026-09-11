@@ -7,7 +7,7 @@ import { useAuthRole } from '../context/AuthRoleContext';
 export default function SeniorDashboard() {
   const { isAffidavitSigned, setIsAffidavitSigned } = useAuthRole();
   const [affidavitModalOpen, setAffidavitModalOpen] = useState(false);
-  const [selectedCase, setSelectedCase] = useState({ id: 'WP-4821/2025', survey: 'Sy. 142/2A' });
+  const [selectedCase, setSelectedCase] = useState({ id: 'WP-4821/2026', survey: 'Sy. 142/2A' });
 
   const handleOpenAffidavit = (caseId, survey) => {
     setSelectedCase({ id: caseId, survey });
@@ -72,12 +72,12 @@ export default function SeniorDashboard() {
                   </div>
                 </div>
                 <div className="mt-space-md flex items-baseline gap-space-xs">
-                  <span className="font-display-hero text-headline-lg text-on-surface font-bold text-3xl">14</span>
+                  <span className="font-display-hero text-headline-lg text-on-surface font-bold text-3xl">4</span>
                   <span className="font-label-action text-label-action text-error font-bold uppercase text-xs">High-Impact</span>
                 </div>
                 <div className="mt-space-sm pt-space-xs bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg pb-space-xs flex items-center justify-between text-caption font-caption text-on-surface-variant text-xs border-t border-surface-container">
                   <span>Court Injunctions Forestalled</span>
-                  <span className="font-bold text-secondary">₹340 Cr Saved</span>
+                  <span className="font-bold text-secondary">₹14.8 Cr Saved</span>
                 </div>
               </div>
 
@@ -118,12 +118,12 @@ export default function SeniorDashboard() {
                   </div>
                 </div>
                 <div className="mt-space-md flex items-baseline gap-space-xs">
-                  <span className="font-display-hero text-headline-lg text-on-surface font-bold text-3xl">8.4</span>
+                  <span className="font-display-hero text-headline-lg text-on-surface font-bold text-3xl">4.2</span>
                   <span className="font-subheading text-on-surface-variant font-bold text-xs">Months</span>
                 </div>
                 <div className="mt-space-sm pt-space-xs bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg pb-space-xs flex items-center justify-between text-caption font-caption text-on-surface-variant text-xs border-t border-surface-container">
                   <span>Statewide Baseline: 14.8 Mo</span>
-                  <span className="font-bold text-secondary">↓ 43.2% faster</span>
+                  <span className="font-bold text-secondary">↓ 71.6% faster</span>
                 </div>
               </div>
 
@@ -141,7 +141,7 @@ export default function SeniorDashboard() {
                   </div>
                 </div>
                 <div className="mt-space-md flex items-baseline gap-space-xs">
-                  <span className="font-display-hero text-headline-lg text-primary font-bold text-3xl">₹4,650</span>
+                  <span className="font-display-hero text-headline-lg text-primary font-bold text-3xl">₹22.5</span>
                   <span className="font-subheading text-on-surface-variant font-bold text-xs">Cr</span>
                 </div>
                 <div className="mt-space-sm pt-space-xs bg-surface-container-low -mx-space-lg -mb-space-lg px-space-lg pb-space-xs flex items-center justify-between text-caption font-caption text-on-surface-variant text-xs border-t border-surface-container">
@@ -187,32 +187,15 @@ export default function SeniorDashboard() {
                     <div className="bg-surface-container-low p-space-sm rounded-xl space-y-space-xs border border-surface-container">
                       <div className="flex items-center justify-between font-bold text-on-surface">
                         <span>Bengaluru Rural (ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ)</span>
-                        <span className="text-on-surface-variant font-normal">6 Active Projects</span>
+                        <span className="text-on-surface-variant font-normal">2 Active Projects</span>
                       </div>
                       <div className="h-5 w-full bg-surface-container-highest rounded-lg overflow-hidden flex shadow-inner">
-                        <div className="h-full bg-secondary flex items-center justify-center text-white font-bold" style={{ width: '50%' }}>3 Low</div>
-                        <div className="h-full bg-amber-500 flex items-center justify-center text-white font-bold" style={{ width: '33.3%' }}>2 Med</div>
-                        <div className="h-full bg-error flex items-center justify-center text-white font-bold" style={{ width: '16.7%' }}>1 High</div>
+                        <div className="h-full bg-secondary flex items-center justify-center text-white font-bold" style={{ width: '50%' }}>1 Low</div>
+                        <div className="h-full bg-error flex items-center justify-center text-white font-bold" style={{ width: '50%' }}>1 High</div>
                       </div>
                       <div className="flex justify-between text-[11px] text-on-surface-variant">
-                        <span>Road Expansion – North Bengaluru, Dobbspet Ind. Exp</span>
+                        <span>Road Expansion – North Bengaluru</span>
                         <span className="font-bold text-error">Devanahalli Sy 142 Action Required</span>
-                      </div>
-                    </div>
-
-                    {/* Bengaluru Urban */}
-                    <div className="bg-surface-container-low p-space-sm rounded-xl space-y-space-xs border border-surface-container">
-                      <div className="flex items-center justify-between font-bold text-on-surface">
-                        <span>Bengaluru Urban (ಬೆಂಗಳೂರು ನಗರ)</span>
-                        <span className="text-on-surface-variant font-normal">4 Active Projects</span>
-                      </div>
-                      <div className="h-5 w-full bg-surface-container-highest rounded-lg overflow-hidden flex shadow-inner">
-                        <div className="h-full bg-secondary flex items-center justify-center text-white font-bold" style={{ width: '75%' }}>3 Low</div>
-                        <div className="h-full bg-amber-500 flex items-center justify-center text-white font-bold" style={{ width: '25%' }}>1 Med</div>
-                      </div>
-                      <div className="flex justify-between text-[11px] text-on-surface-variant">
-                        <span>Metro Phase 3A, Peripheral Link</span>
-                        <span className="font-bold text-secondary">On Track (98% Awarded)</span>
                       </div>
                     </div>
 
@@ -220,11 +203,10 @@ export default function SeniorDashboard() {
                     <div className="bg-surface-container-low p-space-sm rounded-xl space-y-space-xs border border-surface-container">
                       <div className="flex items-center justify-between font-bold text-on-surface">
                         <span>Ramanagara (ರಾಮನಗರ)</span>
-                        <span className="text-on-surface-variant font-normal">2 Active Projects</span>
+                        <span className="text-on-surface-variant font-normal">1 Active Project</span>
                       </div>
                       <div className="h-5 w-full bg-surface-container-highest rounded-lg overflow-hidden flex shadow-inner">
-                        <div className="h-full bg-amber-500 flex items-center justify-center text-white font-bold" style={{ width: '50%' }}>1 Med</div>
-                        <div className="h-full bg-secondary flex items-center justify-center text-white font-bold" style={{ width: '50%' }}>1 Low</div>
+                        <div className="h-full bg-amber-500 flex items-center justify-center text-white font-bold" style={{ width: '100%' }}>1 Med</div>
                       </div>
                       <div className="flex justify-between text-[11px] text-on-surface-variant">
                         <span>Bidadi Industrial Corridor</span>
@@ -256,7 +238,7 @@ export default function SeniorDashboard() {
                       </div>
                       <div className="text-right">
                         <span className="font-bold text-primary text-sm">42%</span>
-                        <span className="block text-on-surface-variant">68 Parcels</span>
+                        <span className="block text-on-surface-variant">18 Parcels</span>
                       </div>
                     </div>
 
@@ -270,7 +252,7 @@ export default function SeniorDashboard() {
                       </div>
                       <div className="text-right">
                         <span className="font-bold text-secondary text-sm">33%</span>
-                        <span className="block text-on-surface-variant">54 Parcels</span>
+                        <span className="block text-on-surface-variant">14 Parcels</span>
                       </div>
                     </div>
 
@@ -284,7 +266,7 @@ export default function SeniorDashboard() {
                       </div>
                       <div className="text-right">
                         <span className="font-bold text-amber-800 text-sm">25%</span>
-                        <span className="block text-on-surface-variant">40 Parcels</span>
+                        <span className="block text-on-surface-variant">10 Parcels</span>
                       </div>
                     </div>
                   </div>
@@ -342,7 +324,7 @@ export default function SeniorDashboard() {
                       <td className="py-space-md px-space-md font-bold text-primary">
                         <div className="flex items-center gap-space-xs">
                           <span className="w-2 h-2 rounded-full bg-error"></span>
-                          <span>WP-4821/2025</span>
+                          <span>WP-4821/2026</span>
                         </div>
                         <span className="block text-caption font-caption text-on-surface-variant font-normal">
                           High Court of Karnataka (Principal Bench)
@@ -371,13 +353,13 @@ export default function SeniorDashboard() {
                       </td>
 
                       <td className="py-space-md px-space-md">
-                        <div className="font-bold text-on-surface">Hearing: Feb 12, 2026</div>
+                        <div className="font-bold text-on-surface">Hearing: Sep 18, 2026</div>
                         <span className="text-caption font-caption text-secondary font-medium">Court Hall 4 (Hon. Justice Rao)</span>
                       </td>
 
                       <td className="py-space-md px-space-md text-right">
                         <button
-                          onClick={() => handleOpenAffidavit('WP-4821/2025', 'Sy. 142/2A')}
+                          onClick={() => handleOpenAffidavit('WP-4821/2026', 'Sy. 142/2A')}
                           className="inline-flex items-center gap-1 px-space-md py-space-xs bg-primary text-on-primary rounded-xl font-label-action text-xs font-bold hover:bg-secondary transition-colors shadow-sm"
                         >
                           <span className="material-symbols-outlined text-[16px]">draw</span>
@@ -420,7 +402,7 @@ export default function SeniorDashboard() {
                       </td>
 
                       <td className="py-space-md px-space-md">
-                        <div className="font-bold text-on-surface">Hearing: Feb 18, 2026</div>
+                        <div className="font-bold text-on-surface">Hearing: Sep 22, 2026</div>
                         <span className="text-caption font-caption text-secondary font-medium">SLAO Chambers Bidadi</span>
                       </td>
 
@@ -493,11 +475,11 @@ export default function SeniorDashboard() {
                     <div className="grid grid-cols-2 gap-space-sm mt-space-md pt-space-xs text-xs">
                       <div className="bg-surface-container-lowest p-space-xs rounded-xl border border-surface-container/60">
                         <span className="font-caption text-on-surface-variant block">Disbursed via Direct Escrow</span>
-                        <span className="font-label-action font-bold text-primary">₹1,240 Crores</span>
+                        <span className="font-label-action font-bold text-primary">₹8.95 Crores</span>
                       </div>
                       <div className="bg-surface-container-lowest p-space-xs rounded-xl border border-surface-container/60">
                         <span className="font-caption text-on-surface-variant block">Allotted Civic Plots</span>
-                        <span className="font-label-action font-bold text-on-surface">480 / 648 Families</span>
+                        <span className="font-label-action font-bold text-on-surface">14 / 14 Families</span>
                       </div>
                     </div>
                   </div>
@@ -544,11 +526,11 @@ export default function SeniorDashboard() {
                     <div className="grid grid-cols-2 gap-space-sm mt-space-md pt-space-xs text-xs">
                       <div className="bg-surface-container-lowest p-space-xs rounded-xl border border-surface-container/60">
                         <span className="font-caption text-on-surface-variant block">Disbursed via Direct Escrow</span>
-                        <span className="font-label-action font-bold text-primary">₹680 Crores</span>
+                        <span className="font-label-action font-bold text-primary">₹5.85 Crores</span>
                       </div>
                       <div className="bg-surface-container-lowest p-space-xs rounded-xl border border-surface-container/60">
                         <span className="font-caption text-on-surface-variant block">Commercial Job Sanctions</span>
-                        <span className="font-label-action font-bold text-on-surface">312 Beneficiaries</span>
+                        <span className="font-label-action font-bold text-on-surface">9 Beneficiaries</span>
                       </div>
                     </div>
                   </div>

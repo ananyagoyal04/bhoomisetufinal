@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthRole } from '../context/AuthRoleContext';
-import SystemStatusBadge from '../components/layout/SystemStatusBadge';
 
 export default function LandingPage() {
   const { setRole, language, toggleLanguage, setIsTechStackOpen } = useAuthRole();
@@ -26,10 +25,9 @@ export default function LandingPage() {
               </span>
             </div>
             <div className="flex items-center space-x-space-md">
-              <SystemStatusBadge />
               <button
                 onClick={() => setIsTechStackOpen(true)}
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-primary font-semibold hover:bg-primary hover:text-white transition-all text-xs border border-surface-container-high"
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-primary font-semibold hover:bg-primary hover:text-white transition-all text-xs border border-surface-container-high cursor-pointer hover:scale-105 active:scale-95"
                 title="View Bhoomi Setu Technical Architecture"
               >
                 <span className="material-symbols-outlined text-[15px]">account_tree</span>
@@ -40,7 +38,7 @@ export default function LandingPage() {
               </span>
               <button
                 onClick={toggleLanguage}
-                className="px-2.5 py-1 rounded bg-surface-container-highest text-primary font-bold hover:bg-primary hover:text-white transition-colors text-xs"
+                className="px-2.5 py-1 rounded bg-surface-container-highest text-primary font-bold hover:bg-primary hover:text-white transition-colors text-xs cursor-pointer"
               >
                 {language === 'en' ? 'ಕನ್ನಡ' : 'English'}
               </button>
@@ -166,11 +164,11 @@ export default function LandingPage() {
                 Pilot Validation Data
               </span>
               <h3 className="font-headline-sm text-headline-sm text-primary font-bold">
-                Bengaluru Urban, Bengaluru Rural & Ramanagara Corridor
+                Bengaluru Rural & Ramanagara Corridor
               </h3>
             </div>
             <span className="inline-flex items-center gap-1 text-on-surface-variant font-caption text-caption bg-surface-container px-space-xs py-1 rounded-md text-xs">
-              <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span> Live Registry Pulse
+              <span className="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active Pilot Pulse
             </span>
           </div>
 
@@ -183,15 +181,15 @@ export default function LandingPage() {
               </div>
               <div className="space-y-1">
                 <div className="font-display-hero text-headline-lg font-bold text-primary">
-                  14,820 <span className="font-body-sm text-body-sm font-normal text-on-surface-variant">Ha</span>
+                  48.5 <span className="font-body-sm text-body-sm font-normal text-on-surface-variant">Ha</span>
                 </div>
                 <p className="font-caption text-caption text-on-surface-variant text-xs">
-                  ನಕ್ಷೆ ಮಾಡಲಾದ ಪಾರ್ಸೆಲ್‌ಗಳು • 8,421 Survey Nos
+                  ನಕ್ಷೆ ಮಾಡಲಾದ ಪಾರ್ಸೆಲ್‌ಗಳು • 42 Survey Nos
                 </p>
               </div>
               <div className="mt-space-sm pt-space-xs flex items-center justify-between text-caption font-caption text-secondary text-xs">
                 <span className="flex items-center gap-1 font-semibold">
-                  <span className="material-symbols-outlined text-[14px]">north_east</span> +8.4% this qtr
+                  <span className="material-symbols-outlined text-[14px]">north_east</span> Pilot Validation
                 </span>
                 <span className="text-on-surface-variant">K-GIS Validated</span>
               </div>
@@ -205,14 +203,14 @@ export default function LandingPage() {
               </div>
               <div className="space-y-1">
                 <div className="font-display-hero text-headline-lg font-bold text-primary">
-                  3 <span className="font-body-sm text-body-sm font-normal text-on-surface-variant">Districts</span>
+                  2 <span className="font-body-sm text-body-sm font-normal text-on-surface-variant">Districts</span>
                 </div>
                 <p className="font-caption text-caption text-on-surface-variant text-xs">
-                  ಗುರಿ ಪೈಲಟ್ ಜಿಲ್ಲೆಗಳು • 12 Taluk Nodes
+                  ಗುರಿ ಪೈಲಟ್ ಜಿಲ್ಲೆಗಳು • 2 Taluk Nodes
                 </p>
               </div>
               <div className="mt-space-sm pt-space-xs flex items-center justify-between text-caption font-caption text-secondary text-xs">
-                <span>BLR Urban / Rural / RMG</span>
+                <span>BLR Rural / RMG</span>
                 <span className="px-1.5 py-0.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded font-semibold text-[10px]">
                   ACTIVE REGISTRY
                 </span>
@@ -227,7 +225,7 @@ export default function LandingPage() {
               </div>
               <div className="space-y-1">
                 <div className="font-display-hero text-headline-lg font-bold text-primary">
-                  ₹3,410 <span className="font-body-sm text-body-sm font-normal text-on-surface-variant">Cr</span>
+                  ₹14.8 <span className="font-body-sm text-body-sm font-normal text-on-surface-variant">Cr</span>
                 </div>
                 <p className="font-caption text-caption text-on-surface-variant text-xs">
                   ಪರಿಹಾರ ವಿತರಿಸಲಾಗಿದೆ • DBT Direct Aadhaar
@@ -256,7 +254,7 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="mt-space-sm pt-space-xs flex items-center justify-between text-caption font-caption text-secondary text-xs">
-                <span className="text-amber-800 font-bold">840 Early Injunctions Averted</span>
+                <span className="text-amber-800 font-bold">6 Early Injunctions Averted</span>
                 <span className="text-on-surface-variant">XGBoost ML</span>
               </div>
             </div>

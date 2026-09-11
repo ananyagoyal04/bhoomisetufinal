@@ -6,7 +6,7 @@
       "stageName": "Stage 01 • Cadastral Survey",
       "designation": "S. Ramesh, Cadastral Unit II",
       "status": "Approved",
-      "date": "2026-07-02",
+      "date": "2026-09-02",
       "time": "14:30",
       "ref": "TS-Ref #991",
       "remarks": "Physical site inspection completed. Boundary pillars GPS cross-verified against Bhoomi spatial GIS database."
@@ -17,7 +17,7 @@
       "stageName": "Stage 02 • Title & Mutation",
       "designation": "Devanahalli Administrative Taluk",
       "status": "Approved",
-      "date": "2026-07-10",
+      "date": "2026-09-06",
       "time": "10:15",
       "ref": "TH-Signed-882",
       "remarks": "Title verified with caveat: legal heirship tree submitted requires revenue court confirmation in Sy 142."
@@ -28,7 +28,7 @@
       "stageName": "Stage 03 • Valuation & SLAO",
       "designation": "DC Bengaluru Rural Secretariat (IAS)",
       "status": "Active",
-      "date": "Pending (SLA: 06 Feb 2026)",
+      "date": "Pending (SLA: 24 Sep 2026)",
       "time": "Active Node",
       "ref": "DC-SEC-2026",
       "remarks": "Pending review of circle rate deviation affidavit and public objection registry under Section 15(2)."
@@ -52,7 +52,7 @@
       "stageName": "Stage 01 • Cadastral Survey",
       "designation": "K. Venkatesh, KIADB Survey Unit",
       "status": "Approved",
-      "date": "2026-06-15",
+      "date": "2026-09-04",
       "time": "11:00",
       "ref": "KIADB-SUR-104",
       "remarks": "Perimeter geo-coordinates mapped and authenticated with KSRSAC satellite base."
