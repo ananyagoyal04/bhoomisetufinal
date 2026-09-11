@@ -60,6 +60,8 @@ SHAP Explainability
 
 Bhoomi Setu demonstrates how **GIS, machine learning, explainable AI, and citizen-centric services** can be integrated into a unified land acquisition management platform.
 
-### 🎯 Vision
+##🎯 Project Vision
 
-> **Making land acquisition more transparent, spatially intelligent, explainable, and citizen-centric.**
+Making land acquisition more transparent, spatially intelligent, explainable, and citizen-centric.
+
+Bhoomi Setu aims to bridge the gap between government acquisition workflows, spatial land intelligence, predictive analytics, statutory compliance, and citizen transparency through a single digital platform.
