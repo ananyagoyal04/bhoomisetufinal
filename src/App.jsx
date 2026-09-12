@@ -9,6 +9,7 @@ import CitizenMyLand from './pages/CitizenMyLand';
 import CitizenSearch from './pages/CitizenSearch';
 import CitizenApplications from './pages/CitizenApplications';
 import TechStackModal from './components/modals/TechStackModal';
+import TerminologyLegendModal from './components/modals/TerminologyLegendModal';
 
 export default function App() {
   return (
@@ -36,6 +37,9 @@ export default function App() {
 
       {/* Global Interactive Architecture & Tech Stack Modal */}
       <TechStackModal />
+
+      {/* Persistent Global Floating Terminology Legend */}
+      <TerminologyLegendModal />
     </>
   );
 }

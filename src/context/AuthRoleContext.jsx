@@ -12,6 +12,7 @@ export function AuthRoleProvider({ children }) {
   const [isAffidavitSigned, setIsAffidavitSigned] = useState(false);
   const [notificationCount, setNotificationCount] = useState(3);
   const [isTechStackOpen, setIsTechStackOpen] = useState(false);
+  const [isLegendOpen, setIsLegendOpen] = useState(false);
 
   const changeRole = (newRole) => {
     setRole(newRole);
@@ -35,7 +36,9 @@ export function AuthRoleProvider({ children }) {
         notificationCount,
         setNotificationCount,
         isTechStackOpen,
-        setIsTechStackOpen
+        setIsTechStackOpen,
+        isLegendOpen,
+        setIsLegendOpen
       }}
     >
       {children}
