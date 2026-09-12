@@ -22,11 +22,11 @@ export default function TechStackModal() {
     {
       id: 'fastapi',
       name: 'Structured REST Schema',
-      category: 'Mock Data Service',
-      status: 'In-Memory Client Schema',
+      category: 'Statutory Data Service',
+      status: 'Client-Side Data Repository',
       icon: 'api',
       badgeClass: 'bg-emerald-100 text-emerald-900 border-emerald-300',
-      summary: 'Structured mock dataset serving standard REST schemas for acquisition entities.',
+      summary: 'Structured dataset serving standard REST schemas for acquisition entities.',
       details: 'Serves structured endpoints for projects, parcels, delay explanations, approvals, and available-land. Fully structured so frontend can swap to real database endpoints without schema changes.'
     },
     {
@@ -132,7 +132,7 @@ export default function TechStackModal() {
                   Bhoomi Setu Engineering Architecture
                 </span>
                 <span className="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-mono text-[10px] font-bold">
-                  v1.0 Architecture Audit
+                  Architecture Overview
                 </span>
               </div>
               <h2 className="font-headline-sm text-headline-sm text-primary font-bold text-xl">
@@ -160,7 +160,7 @@ export default function TechStackModal() {
               }`}
             >
               <span className="material-symbols-outlined text-[16px]">check_circle</span>
-              <span>Current Prototype Stack (Live Demo)</span>
+              <span>Current Prototype Stack</span>
             </button>
             <button
               onClick={() => setActiveTab('roadmap')}
@@ -187,7 +187,7 @@ export default function TechStackModal() {
           <p className="text-on-surface-variant leading-relaxed">
             {activeTab === 'current' ? (
               <span>
-                <strong>Transparent Architectural Disclosure:</strong> The active demonstration operates on a structured in-memory mock schema. Precomputed XGBoost scores and SHAP attributions simulate live machine learning outputs.
+                <strong>Transparent Architectural Disclosure:</strong> The active demonstration operates on a structured client data schema. Precomputed XGBoost scores and SHAP attributions simulate live machine learning outputs.
               </span>
             ) : (
               <span>

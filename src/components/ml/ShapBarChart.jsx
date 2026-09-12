@@ -87,7 +87,7 @@ export default function ShapBarChart({
         <div className="space-y-1">
           <div className="font-label-action text-label-action text-primary font-bold flex items-center gap-2">
             <span>Why This Score? (ಸ್ವಯಂಚಾಲಿತ ವಿಶ್ಲೇಷಣೆ)</span>
-            <span className="text-caption font-caption font-normal text-on-surface-variant text-xs">Model Version: XGBoost-KLA-v4.8</span>
+            <span className="text-caption font-caption font-normal text-on-surface-variant text-xs">Model: XGBoost + SHAP</span>
           </div>
           <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed text-xs">
             {summary}

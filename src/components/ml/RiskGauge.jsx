@@ -4,7 +4,7 @@ export default function RiskGauge({
   score = 84,
   maxScore = 100,
   breachDays = 114,
-  confidence = "91.4% (XGBoost v4.8)",
+  confidence = "91.4% (XGBoost)",
   targetDate = "15 Mar 2026",
   revisedDate = "07 Jul 2026"
 }) {

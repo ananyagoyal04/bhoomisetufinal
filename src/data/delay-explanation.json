@@ -6,7 +6,7 @@
     "riskLevel": "High",
     "kannadaRisk": "ಅಧಿಕ ಅಪಾಯ",
     "breachForecastDays": 42,
-    "confidenceInterval": "91.4% (XGBoost v4.8)",
+    "confidenceInterval": "91.4% (XGBoost)",
     "targetDeadline": "15 Sep 2026",
     "revisedDeadline": "27 Oct 2026",
     "drivers": [
@@ -62,7 +62,7 @@
     "riskLevel": "Medium",
     "kannadaRisk": "ಮಧ್ಯಮ ಅಪಾಯ",
     "breachForecastDays": 18,
-    "confidenceInterval": "88.2% (XGBoost v4.8)",
+    "confidenceInterval": "88.2% (XGBoost)",
     "targetDeadline": "18 Sep 2026",
     "revisedDeadline": "06 Oct 2026",
     "drivers": [

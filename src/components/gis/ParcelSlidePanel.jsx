@@ -168,7 +168,7 @@ export default function ParcelSlidePanel({
             <span className="font-caption text-caption uppercase tracking-wider text-primary font-bold text-[11px]">
               Predictive Risk Vector Breakdown
             </span>
-            <span className="font-caption text-caption text-on-surface-variant">Model: LightGBM v4</span>
+            <span className="font-caption text-caption text-on-surface-variant">Model: XGBoost</span>
           </div>
           <div className="space-y-2 text-body-sm font-body-sm">
             <div>

@@ -80,7 +80,7 @@ export default function LandingPage() {
             <div className="flex flex-col items-end justify-center self-stretch md:self-auto gap-space-xs border-t md:border-t-0 md:border-l border-primary-fixed/20 pt-space-sm md:pt-0 md:pl-space-lg">
               <div className="flex items-center gap-2 bg-primary/60 px-space-md py-space-xs rounded-xl text-primary-fixed">
                 <span className="material-symbols-outlined text-tertiary-fixed-dim">shield_with_heart</span>
-                <span className="font-label-action text-label-action text-right font-bold text-xs">Secured GIS Mesh 3.2</span>
+                <span className="font-label-action text-label-action text-right font-bold text-xs">Secured Spatial Mesh</span>
               </div>
               <div className="text-right">
                 <p className="font-caption text-caption text-primary-fixed-dim uppercase tracking-wider text-[10px]">Spatial Engine</p>
